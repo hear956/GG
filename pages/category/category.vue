@@ -46,7 +46,7 @@
 </template>
 <script>
 	//高德SDK
-	import amap from '@/common/SDK/amap-wx.js';
+
 	export default {
 		data() {
 			return {
