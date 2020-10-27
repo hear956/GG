@@ -28,17 +28,7 @@
 				}
 			}
 		},
-		{
-			"path": "pages/category/abc",
-			"style": {
-				"navigationBarTextStyle":"black",
-				"app-plus": {
-					"titleNView": false ,//禁用原生导航栏
-					"bounce":"none"
-					
-				}
-			}
-		},
+	
 		{
 			"path": "pages/cart/cart",
 			"style": {

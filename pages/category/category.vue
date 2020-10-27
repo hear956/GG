@@ -47,7 +47,6 @@
 <script>
 	//高德SDK
 	import amap from '@/common/SDK/amap-wx.js';
-	import abc from './abc.nvue';
 	export default {
 		data() {
 			return {

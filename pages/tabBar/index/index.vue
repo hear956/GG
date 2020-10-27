@@ -14,14 +14,14 @@
 			<!-- 搜索框 -->
 			
 			<view class="input-box" >
-				<navigator open-type="navigate" url="/pages/tabBar/home/subNvue/homeTitleNvue">
+				
 				<input
 				
 					placeholder="输入搜索内容"
 					placeholder-style="color:#c0c0c0;"
 					@tap="toSearch()"
 				/>
-				</navigator>
+				
 				<image class="icon" src="../../../static/img/icon/search.png"></image>
 				
 			</view>
