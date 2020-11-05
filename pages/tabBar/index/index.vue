@@ -89,7 +89,7 @@
 		<view class="goods-list">
 			<view class="title">
 				<image src="/static/img/icon/huo.png"></image>
-				优惠推荐1
+				优惠推荐
 				<image src="/static/img/icon/huo.png"></image>
 			</view>
 			<view class="product-list">
