@@ -137,28 +137,13 @@
 </template>
 
 <script>
-	import scrollHorizontalTab from "@/components/scroll-horizontal-tab.vue"
+	
 	export default {
-		components: {
-			scrollHorizontalTab
-		},
+		
 		data() {
 			return {
-				index: 0,
-				tabBars:[
-					{
-						value: "1",
-						name: "套餐内容"
-					},
-					{
-						value: "2",
-						name: "订单任务"
-					},
-					{
-						value: "3",
-						name: "打卡足迹"
-					}
-				],
+		
+			
 				couponValidList:[
 					{id:1,title:"日常用品立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"满50使用"},
 					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"100",criteria:"满500使用"},
