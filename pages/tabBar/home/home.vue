@@ -1,13 +1,16 @@
 <template>
 	<view>
 		<view class="tabr" :style="{top:headerTop}">
-			<view :class="{on:typeClass=='valid'}" @tap="switchType('valid')">套餐内容({{couponValidList.length}})</view><view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">订单任务</view><view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">打卡足迹</view>
+			<view :class="{on:typeClass=='valid'}" @tap="switchType('valid')">套餐内容({{couponValidList.length}})</view>
+			<view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">订单任务</view>
+			<view :class="{on:typeClass=='invali'}"  @tap="switchType('invali')">打卡足迹</view>
 			<view class="border" :class="typeClass"></view>
 		</view>
+		<!-- <scroll-horizontal-tab class="tab" :tabBars="tabBars" :onTabTap="getList"></scroll-horizontal-tab> -->
 		<view class="place" ></view>
 		<view class="list">
 			<!-- 优惠券列表 -->
-			<view class="sub-list valid" :class="subState">
+			<view class="sub-list valid" :class="subState" >
 				<view class="tis" v-if="couponValidList.length==0">没有数据~</view>
 				<view class="row" v-for="(row,index) in couponValidList" :key="index" >
 					<!-- 删除按钮 -->
@@ -45,7 +48,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="sub-list invalid" :class="subState">
+			<view class="sub-list invalid" :class="subState" >
 				<view class="tis" v-if="couponinvalidList.length==0">没有数据~</view>
 				<view class="row" v-for="(row,index) in couponinvalidList" :key="index" >
 					<!-- 删除按钮 -->
@@ -86,16 +89,76 @@
 					</view>
 				</view>
 			</view>
+			<view class="sub-list invalid" :class="subState" >
+					<view class="tis" v-if="couponinvalidList.length==0">没有数据~</view>
+					<view class="row" v-for="(row,index) in couponinvalidList" :key="index" >
+						<!-- 删除按钮 -->
+						<view class="menu" @tap.stop="deleteCoupon(row.id,couponinvalidList)">
+							<view class="icon shanchu"></view>
+						</view>
+						<!-- content -->
+						<view class="carrier" :class="[typeClass=='invalid'?theIndex==index?'open':oldIndex==index?'close':'':'']" @touchstart="touchStart(index,$event)" @touchmove="touchMove(index,$event)" @touchend="touchEnd(index,$event)">
+							<view class="left">
+								<view class="title">
+									{{row.title}}
+								</view>
+								<view class="term">
+									{{row.termStart}} ~ {{row.termEnd}}
+								</view>
+								<view class="icon shixiao">
+									
+								</view>
+								<view class="gap-top"></view>
+								<view class="gap-bottom"></view>
+							</view>
+							<view class="right invalid">
+								<view class="ticket">
+									<view class="num">
+										{{row.ticket}}
+									</view>
+									<view class="unit">
+										元
+									</view>
+								</view>
+								<view class="criteria">
+									{{row.criteria}}
+								</view>
+								<view class="use">
+									去查看
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
 		</view>
 		
 	</view>
 </template>
 
 <script>
-
+	import scrollHorizontalTab from "@/components/scroll-horizontal-tab.vue"
 	export default {
+		components: {
+			scrollHorizontalTab
+		},
 		data() {
 			return {
+				index: 0,
+				tabBars:[
+					{
+						value: "1",
+						name: "套餐内容"
+					},
+					{
+						value: "2",
+						name: "订单任务"
+					},
+					{
+						value: "3",
+						name: "打卡足迹"
+					}
+				],
 				couponValidList:[
 					{id:1,title:"日常用品立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"满50使用"},
 					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"100",criteria:"满500使用"},
@@ -141,6 +204,7 @@
 			// #endif
 		},
 		methods: {
+
 			switchType(type){
 				if(this.typeClass==type){
 					return ;
@@ -232,7 +296,6 @@
 	view{
 		display: flex;
 		flex-wrap: wrap;
-		
 	}
 	page{position: relative;background-color: #f5f5f5;}
 	.hidden{
@@ -241,6 +304,9 @@
 	.place{
 		width: 100%;
 		height: 95upx;
+	}
+	.tab{
+		width: 100%;
 	}
 	.tabr{
 		background-color: #fff;
@@ -252,7 +318,7 @@
 		top: 0;
 		z-index: 10;
 		view{
-			width: 50%;
+			width: 33%;
 			height: 90upx;
 			justify-content: center;
 			align-items: center;
@@ -269,6 +335,9 @@
 			&.invalid{
 				transform: translate3d(100%,0,0);
 			}
+			&.invali{
+				transform: translate3d(200%,0,0);
+			}
 		}
 		
 	}
@@ -282,6 +351,9 @@
 	}
 	@keyframes showInvalid {
 		0% {transform: translateX(0);}100% {transform: translateX(-100%);}
+	}
+	@keyframes showInvali {
+		0% {transform: translateX(-100%);}100% {transform: translateX(0);}
 	}
 	.sub-list{
 		&.invalid{
@@ -297,6 +369,10 @@
 		&.showinvalid{
 			display: flex;
 			animation: showInvalid 0.20s linear both;
+		}
+		&.showinvali{
+			display: flex;
+			animation: showInvali 0.20s linear both;
 		}
 		width: 100%;
 		padding: 20upx 0 120upx 0;

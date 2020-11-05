@@ -189,15 +189,10 @@
 			display: flex;
 			align-items: center;
 			.icon{
-				display: flex;
-				align-items: center;
-				position: absolute;
-				top:12;
-				right: 24;
+				margin-left: 180rpx;
 				width: 36upx;
 				height: 36upx;
-				font-size: 34upx;
-				color: #c0c0c0;
+				
 			}
 			input{
 				padding-left: 28upx;
