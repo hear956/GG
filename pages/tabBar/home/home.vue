@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="tabr" :style="{top:headerTop}">
-			<view :class="{on:typeClass=='valid'}" @tap="switchType('valid')">我的卷码({{couponValidList.length}})</view><view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">订单任务</view>
+			<view :class="{on:typeClass=='valid'}" @tap="switchType('valid')">套餐内容({{couponValidList.length}})</view><view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">订单任务</view><view :class="{on:typeClass=='invalid'}"  @tap="switchType('invalid')">打卡足迹</view>
 			<view class="border" :class="typeClass"></view>
 		</view>
 		<view class="place" ></view>

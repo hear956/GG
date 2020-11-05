@@ -36,7 +36,7 @@
 			</view>
 			<view class="row">
 				<view class="nominal">
-					立即发布
+					添加图片
 				</view>
 				<view class="input switch">
 					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />

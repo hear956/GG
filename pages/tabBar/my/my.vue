@@ -38,16 +38,16 @@
 			<view class="tis">会员特权</view>
 		</view> -->
 		<!-- 订单-余额 -->
-		<view class="order">
+		<!-- <view class="order">
 			<!-- 订单类型 -->
-			<view class="list">
+			<!-- <view class="list">
 				<view class="box" v-for="(row,index) in orderList" :key="index" @tap="toOrderList(index)">
 					<view class="img">
 						<view class="icon" :class="row.icon"></view>
 					</view>
 					<view class="text">{{row.text}}</view>
 				</view>
-			</view>
+			</view> -->
 			<!-- 余额 -->
 			<!-- <view class="balance-info">
 				<view class="left">
@@ -73,10 +73,10 @@
 					</view>
 				</view>
 			</view> -->
-		</view>
+		<!-- </view> --> 
 		<!-- 工具栏 -->
 		<view class="toolbar">
-			<view class="title">我的工具栏</view>
+			<!-- <view class="title">我的工具栏</view> -->
 			<view class="list">
 				<view class="box" v-for="(row,index) in mytoolbarList" :key="index" @tap="toPage(row.url)">
 					<view class="img">
@@ -110,19 +110,21 @@
 					envelope:0
 				},
 				// 订单类型
-				orderList:[
-					{text:'待付款',icon:"fukuan"},
-					{text:'待发货',icon:"fahuo"},
-					{text:'待收货',icon:"shouhuo"},
-					{text:'待评价',icon:"pingjia"},
-					{text:'退换货',icon:"tuihuo"}
-				],
+				// orderList:[
+				// 	{text:'待付款',icon:"fukuan"},
+				// 	{text:'待评价',icon:"pingjia"},
+
+				// ],
 				// 工具栏列表
 				mytoolbarList:[
+					{url:'',text:'待付款',img:'/static/img/icon/liwu.png'},
+					{url:'',text:'待评价',img:'/static/img/icon/liwu.png'},
+					{url:'',text:'购买记录',img:'/static/img/icon/liwu.png'},
 					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/icon/like.png'},
-					{url:'../../user/coupon/coupon',text:'优惠券',img:'/static/img/icon/youhui.png'}, 
-					{url:'',text:'新客豪礼',img:'/static/img/icon/liwu.png'},
-					{url:'',text:'领红包',img:'/static/img/icon/hongbao.png'},
+					{url:'../../user/coupon/coupon',text:'浏览足迹',img:'/static/img/icon/youhui.png'}, 
+					{url:'',text:'商家认证',img:'/static/img/icon/liwu.png'},
+					
+				
 					
 					/* {url:'../../user/address/address',text:'收货地址',img:'/static/img/user/addr.png'},
 					{url:'',text:'账户安全',img:'/static/img/user/security.png'},
@@ -456,8 +458,8 @@
 	}
 	.toolbar{
 		width: 92%;
-		margin: 0 4% 0 4%;
-		padding: 0 0 20upx 0;
+		margin: 20upx 4% 0 4%;
+		padding: 35upx 0 20upx 0;
 		background-color: #fff;
 		box-shadow: 0upx 0upx 25upx rgba(0,0,0,0.1);
 		border-radius: 15upx;
