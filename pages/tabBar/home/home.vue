@@ -495,35 +495,7 @@
 					}
 				}
 			}
-			/*
-			<view class="carrier" :class="[theIndex==index?'open':oldIndex==index?'close':'']" @touchstart="touchStart(index,$event)" @touchmove="touchMove(index,$event)" @touchend="touchEnd(index,$event)">
-				<view class="left">
-					<view class="title">
-						10元日常用品类
-					</view>
-					<view class="term">
-						2019-04-01~2019-05-30
-					</view>
-				</view>
-				<view class="right">
-					<view class="ticket">
-						<view class="num">
-							10
-						</view>
-						<view class="unit">
-							元
-						</view>
-					</view>
-					<view class="criteria">
-						满50使用
-					</view>
-					<view class="use">
-						去使用
-					</view>
-				</view>
-			</view>
-			* 
-			* */
+			
 		}
 	}
 	

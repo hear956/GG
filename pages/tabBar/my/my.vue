@@ -37,44 +37,7 @@
 			<view class="title">开通VIP会员</view>
 			<view class="tis">会员特权</view>
 		</view> -->
-		<!-- 订单-余额 -->
-		<!-- <view class="order">
-			<!-- 订单类型 -->
-			<!-- <view class="list">
-				<view class="box" v-for="(row,index) in orderList" :key="index" @tap="toOrderList(index)">
-					<view class="img">
-						<view class="icon" :class="row.icon"></view>
-					</view>
-					<view class="text">{{row.text}}</view>
-				</view>
-			</view> -->
-			<!-- 余额 -->
-			<!-- <view class="balance-info">
-				<view class="left">
-					<view class="box">
-						<view class="num">{{user.integral}}</view>
-						<view class="text">积分</view>
-					</view>
-					<view class="box">
-						<view class="num">{{user.envelope}}</view>
-						<view class="text">佣金</view>
-					</view>
-					<view class="box">
-						<view class="num">{{user.balance}}</view>
-						<view class="text">余额</view>
-					</view>
-				</view>
-				<view class="right">
-					<view class="box" @tap="toDeposit">
-						<view class="img">
-							<view class="icon chongzhi"></view>
-						</view>
-						<view class="text">充值</view>
-					</view>
-				</view>
-			</view> -->
-		<!-- </view> --> 
-		<!-- 工具栏 -->
+		
 		<view class="toolbar">
 			<!-- <view class="title">我的工具栏</view> -->
 			<view class="list">

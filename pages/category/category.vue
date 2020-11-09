@@ -129,7 +129,9 @@
 			},
 			//搜索跳转
 			toSearch(){
-				uni.showToast({title: "建议跳转到新页面做搜索功能"});
+				uni.navigateTo({
+				url:'/common/search/search'
+				});
 			}
 		}
 	}
