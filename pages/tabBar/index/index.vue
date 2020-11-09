@@ -48,20 +48,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- 分类列表 -->
-		<!-- <view class="category-list">
-			<view
-				class="category"
-				v-for="(row, index) in categoryList"
-				:key="index"
-				@tap="toCategory(row)"
-			>
-				<view class="img"><image :src="row.img"></image></view>
-				<view class="text">{{ row.name }}</view>
-			</view>
-		</view> -->
-		<!-- 广告图 -->
-		<!-- <view class="banner"><image src="/static/img/banner.jpg"></image></view> -->
+		
 			<!-- 占位 -->
 			<view v-if="showHeader" class="place" style="height: 50upx;"></view>
 		<!-- 活动区 -->
@@ -137,17 +124,7 @@ export default {
 				{ id: 6, src: 'url6', img: 'http://localhost/photo/6.jpg' },
 				{ id: 7, src: 'url7', img: 'http://localhost/photo/7.jpg' }
 			],
-			// 分类菜单
-			/* categoryList: [
-				{ id: 1, name: '办公', img: '/static/img/category/1.png' },
-				{ id: 2, name: '家电', img: '/static/img/category/2.png' },
-				{ id: 3, name: '服饰', img: '/static/img/category/3.png' },
-				{ id: 4, name: '日用', img: '/static/img/category/4.png' },
-				{ id: 5, name: '蔬果', img: '/static/img/category/5.png' },
-				{ id: 6, name: '运动', img: '/static/img/category/6.png' },
-				{ id: 7, name: '书籍', img: '/static/img/category/7.png' },
-				{ id: 8, name: '文具', img: '/static/img/category/8.png' }
-			], */
+			
 			Promotion: [],
 			//猜你喜欢列表
 			productList: [
@@ -292,95 +269,7 @@ export default {
 		this.loadPromotion();
 	},
 	methods: {
-		//加载Promotion 并设定倒计时,,实际应用中应该是ajax加载此数据。
-		/* loadPromotion() {
-			let cutTime = new Date();
-			let yy = cutTime.getFullYear(),
-				mm = cutTime.getMonth() + 1,
-				dd = cutTime.getDate();
-			let tmpcountdown = yy + '/' + mm + '/' + dd + ' 23:59:59';
-			let tmpPromotion = [
-				{
-					title: '整点秒杀',
-					ad: '整天秒杀专区',
-					img: '/static/img/s1.jpg',
-					countdown: false
-				},
-				{
-					title: '限时抢购',
-					ad: '每天23点上线',
-					img: '/static/img/s2.jpg',
-					countdown: tmpcountdown
-				} //countdown为目标时间，程序会获取当前时间倒数
-			];
-			//检查倒计时
-			for (let i = 0; i < tmpPromotion.length; i++) {
-				let row = tmpPromotion[i];
-				if (row.countdown) {
-					let h = '00',
-						m = '00',
-						s = '00';
-					let currentTime = new Date();
-					let cutoffTime = new Date(tmpcountdown);
-					if (!(currentTime >= cutoffTime)) {
-						let countTime = parseInt(
-							(cutoffTime.getTime() - currentTime.getTime()) / 1000
-						);
-						h = parseInt(countTime / 3600);
-						m = parseInt((countTime % 3600) / 60);
-						s = countTime % 60;
-						h = h < 10 ? '0' + h : h;
-						m = m < 10 ? '0' + m : m;
-						s = s < 10 ? '0' + s : s;
-					}
-					tmpPromotion[i].countdown = { h: h, m: m, s: s };
-				}
-			}
-			this.Promotion = tmpPromotion;
-		},
-		//定时器
-		Timer() {
-			setInterval(() => {
-				if (this.Promotion.length > 0) {
-					for (let i = 0; i < this.Promotion.length; i++) {
-						let row = this.Promotion[i];
-						if (row.countdown) {
-							if (
-								!(
-									row.countdown.h == 0 &&
-									row.countdown.m == 0 &&
-									row.countdown.s == 0
-								)
-							) {
-								if (row.countdown.s > 0) {
-									row.countdown.s--;
-									row.countdown.s =
-										row.countdown.s < 10
-											? '0' + row.countdown.s
-											: row.countdown.s;
-								} else if (row.countdown.m > 0) {
-									row.countdown.m--;
-									row.countdown.m =
-										row.countdown.m < 10
-											? '0' + row.countdown.m
-											: row.countdown.m;
-									row.countdown.s = 59;
-								} else if (row.countdown.h > 0) {
-									row.countdown.h--;
-									row.countdown.h =
-										row.countdown.h < 10
-											? '0' + row.countdown.h
-											: row.countdown.h;
-									row.countdown.m = 59;
-									row.countdown.s = 59;
-								}
-								this.Promotion[i].countdown = row.countdown;
-							}
-						}
-					}
-				}
-			}, 1000);
-		}, */
+		
 		//消息列表
 		toMsg(){
 			uni.navigateTo({

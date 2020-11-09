@@ -24,19 +24,9 @@
 				<view class="username" @tap="toLogin">{{user.username}}</view>
 				<view class="signature" @tap="toSetting">{{user.signature}}</view>
 			</view>
-			<!-- 二维码按钮 -->
-			<view class="erweima" @tap="toMyQR">
-				<view class="icon qr"></view>
-			</view>
+			
 		</view>
-		<!-- VIP banner -->
-		<!-- <view class="VIP">
-			<view class="img">
-				<image src="/static/img/VIP.png"></image>
-			</view>
-			<view class="title">开通VIP会员</view>
-			<view class="tis">会员特权</view>
-		</view> -->
+		
 		
 		<view class="toolbar">
 			<!-- <view class="title">我的工具栏</view> -->
@@ -72,12 +62,7 @@
 					balance:0,
 					envelope:0
 				},
-				// 订单类型
-				// orderList:[
-				// 	{text:'待付款',icon:"fukuan"},
-				// 	{text:'待评价',icon:"pingjia"},
-
-				// ],
+				
 				// 工具栏列表
 				mytoolbarList:[
 					{url:'',text:'待付款',img:'/static/img/icon/liwu.png'},
@@ -88,13 +73,6 @@
 					{url:'',text:'商家认证',img:'/static/img/icon/liwu.png'},
 					
 				
-					
-					/* {url:'../../user/address/address',text:'收货地址',img:'/static/img/user/addr.png'},
-					{url:'',text:'账户安全',img:'/static/img/user/security.png'},
-					{url:'',text:'银行卡',img:'/static/img/user/bank.png'},
-					{url:'',text:'抽奖',img:'/static/img/user/choujiang.png'}, */
-					// {text:'客服',img:'/static/img/user/kefu.png'},
-					// {text:'签到',img:'/static/img/user/mingxi.png'}
 					
 				]
 			}

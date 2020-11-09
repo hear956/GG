@@ -29,22 +29,7 @@
 			}
 		},
 	
-		{
-			"path": "pages/cart/cart",
-			"style": {
-				"enablePullDownRefresh": true,
-				"navigationBarTextStyle":"black",
-				"app-plus": {
-					"titleNView": false ,//禁用原生导航栏
-					"softinputNavBar":"none",
-					"subNVues":[{  
-						"id": "cartTitleNvue", // 唯一标识  
-						"path": "pages/tabBar/cart/subNvue/cartTitleNvue", // 页面路径  
-						"type":"navigationBar"
-					}]
-				}
-			}
-		},
+		
 		{
 			"path": "pages/tabBar/my/my",
 			"style": {
@@ -150,20 +135,11 @@
 			}
         }
         ,{
-            "path" : "pages/user/myQR/myQR",
-            "style" : {
-				"navigationBarTitleText":"我的二维码",
-				"app-plus":{
-					"bounce":"none"
-				}
-			}
-        }
-        ,{
             "path" : "pages/msg/msg",
             "style" : {
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "消息列表",
-				"navigationBarBackgroundColor":"#f06c7a",
+				"navigationBarBackgroundColor":"#595BB3",
 				"navigationBarTextStyle":"white"
 			}
         }
