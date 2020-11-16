@@ -6,7 +6,15 @@
 					商品标题
 				</view>
 				<view class="input">
-					<input placeholder="请为此次拼团设置标题" type="text" v-model="name" />
+					<input placeholder="请为此次拼团设置主题" type="text" v-model="name" />
+				</view>
+			</view>
+			<view class="row">
+				<view class="nominal">
+					商品标题
+				</view>
+				<view class="input">
+					<input placeholder="个人拼团/任务拼团" type="text" v-model="name1" />
 				</view>
 			</view>
 			<view class="row">
@@ -14,7 +22,7 @@
 					商品信息
 				</view>
 				<view class="input">
-					<input placeholder="请输入商品相关信息" type="text" v-model="tel" />
+					<input placeholder="请输入拼团相关信息" type="text" v-model="tel" />
 				</view>
 			</view>
 			<view class="row">
@@ -111,24 +119,28 @@
 				
 			},
 			save(){
-				let data={"name":this.name,"head":this.name.substr(0,1),"tel":this.tel,"address":{"region":this.region,"detailed":this.detailed},"isDefault":this.isDefault}
+				let data={"name":this.name,"head":this.name.substr(0,1),"name1":this.name1,"tel":this.tel,"address":{"region":this.region,"detailed":this.detailed},"isDefault":this.isDefault}
 				if(this.editType=='edit'){
 					data.id = this.id
 				}
 				if(!data.name){
-					uni.showToast({title:'请输入收件人姓名',icon:'none'});
+					uni.showToast({title:'请输入拼团主题',icon:'none'});
+					return ;
+				}
+				if(!data.name1){
+					uni.showToast({title:'请输入拼团类型',icon:'none'});
 					return ;
 				}
 				if(!data.tel){
-					uni.showToast({title:'请输入收件人电话号码',icon:'none'});
+					uni.showToast({title:'请输入拼团相关信息',icon:'none'});
 					return ;
 				}
 				if(!data.address.detailed){
-					uni.showToast({title:'请输入收件人详细地址',icon:'none'});
+					uni.showToast({title:'请输入商家详细地址',icon:'none'});
 					return ;
 				}
 				if(data.address.region.value.length==0){
-					uni.showToast({title:'请选择收件地址',icon:'none'});
+					uni.showToast({title:'请选择商家所在地区',icon:'none'});
 					return ;
 				}
 				uni.showLoading({

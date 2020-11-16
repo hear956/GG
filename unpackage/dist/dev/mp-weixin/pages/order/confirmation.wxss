@@ -28,8 +28,10 @@
   width: 86%;
   padding: 20rpx 3%;
   margin: 30rpx auto 20rpx auto;
-  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
-  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -67,8 +69,10 @@
   width: 86%;
   padding: 10rpx 3%;
   margin: 30rpx auto 20rpx auto;
-  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
-  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
 }
 .buy-list .row {
   margin: 30rpx 0;
@@ -82,7 +86,8 @@
 .buy-list .row .goods-info .img {
   width: 22vw;
   height: 22vw;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   overflow: hidden;
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
@@ -123,7 +128,8 @@
   -webkit-align-items: center;
           align-items: center;
   padding: 0 10rpx;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   margin-bottom: 20vw;
 }
 .buy-list .row .goods-info .info .price-number {
@@ -160,8 +166,10 @@
   width: 86%;
   padding: 10rpx 3%;
   margin: 30rpx auto 20rpx auto;
-  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
-  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
 }
 .order .row {
   margin: 20rpx 0;
@@ -246,14 +254,17 @@
   -webkit-align-items: center;
           align-items: center;
   font-size: 30rpx;
-  border-radius: 40rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
 }
 .detail {
   width: 86%;
   padding: 10rpx 3%;
   margin: 30rpx auto 20rpx auto;
-  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
-  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
 }
 .detail .row {
   height: 60rpx;

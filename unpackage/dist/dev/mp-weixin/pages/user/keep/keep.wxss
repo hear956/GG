@@ -65,11 +65,11 @@ page {
   color: #999;
 }
 .tabr .on {
-  color: #f06c7a;
+  color: #595BB3;
 }
 .tabr .border {
   height: 4rpx;
-  background-color: #f06c7a;
+  background-color: #595BB3;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -171,7 +171,8 @@ page {
 .sub-list.shop .row .left image {
   width: 18vw;
   height: 18vw;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
 .sub-list.shop .row .right {
   height: 20vw;
@@ -276,7 +277,8 @@ page {
 .sub-list .row .carrier .goods-info .img {
   width: calc(30vw - 40rpx);
   height: calc(30vw - 40rpx);
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   overflow: hidden;
   -webkit-flex-shrink: 0;
           flex-shrink: 0;

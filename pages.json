@@ -242,6 +242,15 @@
             
         }
         ,{
+            "path" : "pages/celler/celler",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
             "path" : "pages/tabBar/home/home",
             "style" :                                                                                    
             {

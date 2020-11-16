@@ -33,7 +33,7 @@
   font-family: 'HM-font' !important;
   font-size: 60rpx;
   font-style: normal;
-  color: #000000;
+  /* 	color: #000000; */
 }
 .icon.yuyin-home:before {
   content: '\e64e';
@@ -42,10 +42,10 @@
   content: '\e729';
 }
 .icon.search:before {
-  content: '\e628';
+  content: '\e6ee';
 }
 .icon.location:before {
-  content: '\e611';
+  content: '\e6f0';
 }
 .icon.xia:before {
   content: '\e689';

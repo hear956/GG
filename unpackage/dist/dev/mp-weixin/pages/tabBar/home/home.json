@@ -1,6 +1,6 @@
 {
-  "navigationBarTextStyle": "black",
-  "enablePullDownRefresh": true,
-  "onReachBottomDistance": 50,
+  "navigationBarTitleText": "订单中心",
+  "navigationBarBackgroundColor": "#595BB3",
+  "navigationBarTextStyle": "white",
   "usingComponents": {}
 }

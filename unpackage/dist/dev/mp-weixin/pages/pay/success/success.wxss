@@ -65,7 +65,8 @@ view {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   font-size: 34rpx;
 }
 

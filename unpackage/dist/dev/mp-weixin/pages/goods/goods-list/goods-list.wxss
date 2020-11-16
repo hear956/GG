@@ -100,14 +100,17 @@
 }
 .goods-list .product-list .product {
   width: 48%;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   background-color: #fff;
   margin: 0 0 15rpx 0;
-  box-shadow: 0rpx 5rpx 25rpx rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0rpx 5rpx 25rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 25rpx rgba(0, 0, 0, 0.1);
 }
 .goods-list .product-list .product image {
   width: 100%;
-  border-radius: 20rpx 20rpx 0 0;
+  -webkit-border-radius: 20rpx 20rpx 0 0;
+          border-radius: 20rpx 20rpx 0 0;
 }
 .goods-list .product-list .product .name {
   width: 92%;

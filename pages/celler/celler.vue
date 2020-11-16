@@ -1,27 +1,5 @@
 <template>
 	<view>
-		
-	</view>
-</template>
-
-<script>
-	export default {
-		data() {
-			return {
-				
-			}
-		},
-		methods: {
-			
-		}
-	}
-</script>
-
-<style>
-
-</style>
-<template>
-	<view>
 		<view class="content">
 			<view class="row">
 				<view class="nominal">

@@ -54,7 +54,8 @@ page {
 .chat-list .chat .row .left image {
   width: 100rpx;
   height: 100rpx;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
 }
 .chat-list .chat .row .right {
   -webkit-flex-shrink: 1;
@@ -113,6 +114,7 @@ page {
           align-items: center;
   background-color: #eb4d3d;
   color: #fff;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
 
