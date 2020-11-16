@@ -241,6 +241,54 @@
 				
             }
             
+        } ,{
+            "path" : "pages/user/celler/celler",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家认证",
+           "navigationBarBackgroundColor":"#595BB3",
+           	"navigationBarTextStyle":"white",
+           	"app-plus":{
+           		"bounce":"none"
+           	}
+           }
+            
+        }
+        ,{
+            "path" : "pages/user/Forthepayment/Forthepayment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Toevaluate/Toevaluate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Purchaserecords/Purchaserecords",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Browsethefootprint/Browsethefootprint",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {

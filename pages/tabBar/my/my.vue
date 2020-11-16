@@ -65,12 +65,12 @@
 				
 				// 工具栏列表
 				mytoolbarList:[
-					{url:'',text:'待付款',img:'/static/img/icon/liwu.png'},
-					{url:'',text:'待评价',img:'/static/img/icon/liwu.png'},
-					{url:'',text:'购买记录',img:'/static/img/icon/liwu.png'},
+					{url:'../../user/Forthepayment/Forthepayment',text:'待付款',img:'/static/img/icon/liwu.png'},
+					{url:'../../user/Toevaluate/Toevaluate',text:'待评价',img:'/static/img/icon/liwu.png'},
+					{url:'../../user/Purchaserecords/Purchaserecords',text:'购买记录',img:'/static/img/icon/liwu.png'},
 					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/icon/like.png'},
-					{url:'../../user/coupon/coupon',text:'浏览足迹',img:'/static/img/icon/youhui.png'}, 
-					{url:'',text:'商家认证',img:'/static/img/icon/liwu.png'},
+					{url:'../../user/Browsethefootprint/Browsethefootprint',text:'浏览足迹',img:'/static/img/icon/youhui.png'}, 
+					{url:'../../user/celler/celler',text:'商家认证',img:'/static/img/icon/liwu.png'},
 					
 				
 					
