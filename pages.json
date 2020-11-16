@@ -156,17 +156,6 @@
 			}
         }
         ,{
-            "path" : "pages/user/coupon/coupon",
-            "style" : {
-				"navigationBarTitleText": "优惠券",
-				"navigationBarBackgroundColor":"#595BB3",
-				"navigationBarTextStyle":"white",
-				"app-plus":{
-					"bounce":"none"
-				}
-			}
-        }
-        ,{
             "path" : "pages/user/keep/keep",
             "style" : {
 				"navigationBarTitleText": "我的收藏",
@@ -191,15 +180,6 @@
             "style" : {
 				"navigationBarBackgroundColor":"#ffffff",
 				"navigationBarTitleText":"编辑收件人地址",
-				"backgroundColorTop":"#ffffff",
-				"backgroundColorBottom":"#ffffff"
-			}
-        }
-        ,{
-            "path" : "pages/user/deposit/deposit",
-            "style" : {
-				"navigationBarBackgroundColor":"#ffffff",
-				"navigationBarTitleText":"充值",
 				"backgroundColorTop":"#ffffff",
 				"backgroundColorBottom":"#ffffff"
 			}
