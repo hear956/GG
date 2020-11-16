@@ -41,6 +41,9 @@
 				<view class="input switch">
 					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
 				</view>
+				<view>
+					<image id="imageChoose" src="../../static/img/emoji/104.gif" mode="bottom"@tap="choose"></image>
+				</view>
 			</view>
 			<view class="row" v-if="editType=='edit'" @tap="del">
 				<view class="del">
@@ -56,6 +59,7 @@
 		<mpvue-city-picker :themeColor="themeColor" ref="mpvueCityPicker" :pickerValueDefault="cityPickerValue" @onCancel="onCancel" @onConfirm="onConfirm"></mpvue-city-picker>
 	</view>
 </template>
+
 
 <script>
 	import mpvueCityPicker from '@/components/mpvue-citypicker/mpvueCityPicker.vue'
@@ -77,6 +81,12 @@
 			};
 		},
 		methods: {
+			choose(){
+				wx.chooseImage({success: function(res) {
+					console.log(res.tempFilePaths)
+					// document.getElementById("imageChoose").
+				},});
+			},
 			onCancel(e) {
 				console.log(e)
 			},
