@@ -29,7 +29,7 @@
 		
 		
 		<view class="toolbar">
-			<!-- <view class="title">我的工具栏</view> -->
+			
 			<view class="list">
 				<view class="box" v-for="(row,index) in mytoolbarList" :key="index" @tap="toPage(row.url)">
 					<view class="img">
