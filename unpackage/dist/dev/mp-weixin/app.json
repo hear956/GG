@@ -24,7 +24,8 @@
     "pages/launch/launch",
     "pages/celler/celler",
     "pages/tabBar/home/home",
-    "common/search/search"
+    "common/search/search",
+    "common/success/success"
   ],
   "subPackages": [],
   "window": {
