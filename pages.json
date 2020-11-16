@@ -8,12 +8,7 @@
 				"onReachBottomDistance":50,
 				"app-plus": {
 					"titleNView": false ,//禁用原生导航栏
-					"softinputNavBar":"none",
-					"subNVues":[{  
-						"id": "indexTitleNvue", // 唯一标识  
-						"path": "pages/tabBar/index/subNvue/homeTitleNvue", // 页面路径  
-						"type":"navigationBar"
-					}]
+					"softinputNavBar":"none"
 				}
 			}
 		},
@@ -243,6 +238,7 @@
 				"app-plus":{
 					"bounce":"none"
 				}
+				
             }
             
         }
