@@ -40,7 +40,7 @@
 				</view>
 			</view>
 			<view class="btn">
-				<view class="joinCart" @tap="joinCart">加入购物车</view>
+			
 				<view class="buy" @tap="buy">立即购买</view>
 			</view>
 		</view>
@@ -797,7 +797,7 @@ page {
 			background-color: #f0b46c;
 		}
 		.buy {
-			background-color: #f06c7a;
+			background-color: #595BB3;
 		}
 	}
 }

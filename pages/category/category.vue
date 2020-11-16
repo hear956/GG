@@ -5,7 +5,7 @@
         <view class="header" :style="{position:headerPosition}">
 			<view class="addr"><image  class="icon" src="/static/img/icon/dingwei.png"></image>{{city}}</view>
 			<view class="input-box">
-				<input placeholder="默认关键字" placeholder-style="color:#c0c0c0;" @tap="toSearch()"/>
+				<input placeholder="输入搜索内容" placeholder-style="color:#c0c0c0;" @tap="toSearch()"/>
 					<image class="icon" src="/static/img/icon/search.png"></image>
 			<!-- 	<view class="icon loca"></view> -->
 			</view>
