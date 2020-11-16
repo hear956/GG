@@ -25,7 +25,8 @@
     "pages/celler/celler",
     "pages/tabBar/home/home",
     "common/search/search",
-    "common/success/success"
+    "common/success/success",
+    "pages/goods/ratings/goods1/goods1"
   ],
   "subPackages": [],
   "window": {

@@ -68,14 +68,8 @@
 				<view class="content">
 					￥{{goodsPrice|toFixed}}
 				</view>
-			</view>
-			<view class="row">
-				<view class="nominal">
-					运费
-				</view>
-				<view class="content">
-					￥+{{freight|toFixed}}
-				</view>
+			
+				
 			</view>
 			<view class="row">
 				<view class="nominal">

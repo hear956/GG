@@ -52,40 +52,34 @@
 			return {
 				showCategoryIndex:0,
 				headerPosition:"fixed",
-				city:"贵阳",
+				city:"黔南",
 				//分类列表
 				categoryList:[
 					{id:1,title:'景点',banner:'/static/img/category/banner.jpg',list:[
-						{name:'小七孔',	img:'http://localhost/photo/1.jpg'},
-						{name:'黄果树瀑布',	img:'http://localhost/photo/2.jpg'},
-						{name:'梵净山',	img:'http://localhost/photo/3.jpg'}
+						{name:'荔波小七孔',	img:'http://localhost/photo/.jpg'},
+						{name:'中国天眼',	img:'http://localhost/photo/2.jpg'},
+						{name:'荔波茂兰自然保护区',	img:'http://localhost/photo/3.jpg'}
 					
 					]},
 					{id:2,title:'餐饮',banner:'/static/img/category/banner.jpg',list:[
-						{name:'打印机',	img:'1.jpg'},
-						{name:'路由器',	img:'2.jpg'},
-						{name:'扫描仪',	img:'3.jpg'},
-						{name:'投影仪',	img:'4.jpg'},
-						{name:'墨盒',	img:'5.jpg'},
-						{name:'纸类',	img:'6.jpg'}
+						
+						{name:'早餐',	img:'breakfast.png'},
+						{name:'午餐',	img:'lunch.png'},
+						{name:'晚餐',	img:'dinner.png'},
+					
 					]},
 					{id:3,title:'住宿',banner:'/static/img/category/banner.jpg',list:[
-						{name:'茶具',	img:'1.jpg'},
-						{name:'花瓶',	img:'2.jpg'},
-						{name:'纸巾',	img:'3.jpg'},
-						{name:'毛巾',	img:'4.jpg'},
-						{name:'牙膏',	img:'5.jpg'},
-						{name:'保鲜膜',	img:'6.jpg'},
-						{name:'保鲜袋',	img:'7.jpg'}
+						{name:'经济/舒适',	img:'hotel1.png'},
+						{name:'高档/豪华',	img:'hotel2.png'},
+						{name:'民宿',	img:'minsu.png'},
+						
 					]},
 					{id:4,title:'商品',banner:'/static/img/category/banner.jpg',list:[
-						{name:'苹果',	img:'1.jpg'},
-						{name:'芒果',	img:'2.jpg'},
-						{name:'椰子',	img:'3.jpg'},
-						{name:'橙子',	img:'4.jpg'},
-						{name:'奇异果',	img:'5.jpg'},
-						{name:'玉米',	img:'6.jpg'},
-						{name:'百香果',	img:'7.jpg'}
+						{name:'纪念品',	img:'suv.png'},
+						{name:'特产',	img:'special.png'},
+						{name:'服饰',	img:'clothes.png'},
+						
+						
 					]},
 				]
 			}

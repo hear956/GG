@@ -202,10 +202,9 @@ export default {
 			// #endif
 			//轮播主图数据
 			swiperList: [
-				{ id: 1, img: 'http://localhost/photo/1.jpg' },
-				{ id: 2, img: 'http://localhost/photo/2.jpg' },
-				{ id: 3, img: 'http://localhost/photo/3.jpg' },
-				{ id: 4, img: 'http://localhost/photo/4.jpg' }
+				{ id: 1, img: 'http://localhost/photo/qikong.jpg' },
+				{ id: 2, img: 'http://localhost/photo/hotel.jpg' },
+				
 			],
 			//轮播图下标
 			currentSwiper: 0,
@@ -217,8 +216,8 @@ export default {
 			// 商品信息
 			goodsData:{
 				id:1,
-				name:"风景",
-				price:"127.00",
+				name:"小七孔门票+xx酒店住宿1日",
+				price:"300.00",
 				number:1,
 				service:[
 					{name:"官方认证",description:"此商品官方保证为正品"},
@@ -230,13 +229,13 @@ export default {
 					number:102,
 					userface:'../../static/img/face.jpg',
 					username:'hear956',
-					content:'风景非常好，价格也很好，推荐大家购买'
+					content:'风景非常好，价格也很好，很棒的一次拼团'
 				}
 			},
 			selectSpec:null,//选中规格
 			isKeep:false,//收藏
 			//商品描述html
-			descriptionStr:'<div style="text-align:center;"><img width="100%" src="http://localhost/photo/5.jpg"/><img width="100%" src="http://localhost/photo/6.jpg"/><img width="100%" src="http://localhost/photo/7.jpg"/></div>'
+			descriptionStr:'<div style="text-align:center;"><img width="100%" src="http://localhost/photo/qikong.jpg"/><img width="100%" src="http://localhost/photo/hotel.jpg"/><img width="100%" src="http://localhost/photo/7.jpg"/></div>'
 		};
 	},
 	onLoad(option) {

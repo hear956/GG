@@ -10,7 +10,7 @@
 			支付金额:{{amount}}元
 		</view>
 		<view class="back">
-			<view class="btn" @tap="toUser">个人中心</view>
+			<view class="btn" @tap="toUser">查看订单</view>
 		</view>
 	</view>
 </template>
@@ -28,7 +28,7 @@
 		methods: {
 			toUser() {
 				uni.switchTab({
-					url: '/pages/tabBar/user'
+					url: '/pages/tabBar/home/home'
 				});
 			}
 		},
@@ -66,8 +66,8 @@
 	.btn{
 		padding: 0 50upx;
 		height: 70upx;
-		border: solid 2upx #f06c7a;
-		color: #f06c7a;
+		border: solid 2upx #595BB3;
+		color: #595BB3;
 		align-items: center;
 		border-radius: 10upx;
 		font-size: 34upx;

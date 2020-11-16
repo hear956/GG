@@ -160,7 +160,7 @@ var _default =
   methods: {
     toUser: function toUser() {
       uni.switchTab({
-        url: '/pages/tabBar/user' });
+        url: '/pages/tabBar/home/home' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

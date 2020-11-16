@@ -101,11 +101,9 @@ var render = function() {
 
   var f1 = _vm._f("toFixed")(_vm.goodsPrice)
 
-  var f2 = _vm._f("toFixed")(_vm.freight)
+  var f2 = _vm._f("toFixed")(_vm.deduction)
 
-  var f3 = _vm._f("toFixed")(_vm.deduction)
-
-  var f4 = _vm._f("toFixed")(_vm.sumPrice)
+  var f3 = _vm._f("toFixed")(_vm.sumPrice)
 
   _vm.$mp.data = Object.assign(
     {},
@@ -114,8 +112,7 @@ var render = function() {
         f0: f0,
         f1: f1,
         f2: f2,
-        f3: f3,
-        f4: f4
+        f3: f3
       }
     }
   )
@@ -153,12 +150,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
 //
 //
 //

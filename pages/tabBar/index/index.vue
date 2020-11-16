@@ -76,7 +76,7 @@
 		<view class="goods-list">
 			<view class="title">
 				<image src="/static/img/icon/huo.png"></image>
-				优惠推荐
+				拼团推荐
 				<image src="/static/img/icon/huo.png"></image>
 			</view>
 			<view class="product-list">
@@ -130,74 +130,40 @@ export default {
 			productList: [
 				{
 					goods_id: 0,
-					img: 'http://localhost/photo/8.jpg',
-					name: '好看的湖',
-					price: '￥168',
-					slogan: '1235人付款'
+					img: 'http://localhost/photo/xiaoqik.jpg',
+					name: '小七孔门票+xx酒店住宿1日',
+					price: '￥300',
+					slogan: '10人团'
 				},
 				{
 					goods_id: 1,
-					img: 'http://localhost/photo/10.jpg',
-					name: '黄昏时的街道',
-					price: '￥168',
-					slogan: '1235人付款'
+					img: 'http://localhost/photo/qikong.jpg',
+					name: '小七孔门票+黔南特色风猪套餐',
+					price: '￥280',
+					slogan: '10人团'
 				},
 				{
 					goods_id: 2,
-					img: 'http://localhost/photo/11.jpg',
-					name: '上海外滩',
-					price: '￥168',
-					slogan: '1235人付款'
+					img: 'http://localhost/photo/skyeye.jpg',
+					name: '中国天眼+天文风情客栈1日',
+					price: '￥358',
+					slogan: '15人团'
 				},
 				{
 					goods_id: 3,
-					img: 'http://localhost/photo/12.jpg',
-					name: '城市夜景',
-					price: '￥168',
-					slogan: '1235人付款'
+					img: 'http://localhost/photo/guzhen.jpg',
+					name: '福泉古镇门票+民族服饰体验',
+					price: '￥246',
+					slogan: '20人团'
 				},
 				{
 					goods_id: 4,
-					img: 'http://localhost/photo/13.jpg',
-					name: '城市立交桥',
+					img: 'http://localhost/photo/jiangjiehe.jpg',
+					name: '江界河风景名胜区+摆渡船来回',
 					price: '￥168',
-					slogan: '1235人付款'
+					slogan: '10人团'
 				},
-				{
-					goods_id: 5,
-					img: 'http://localhost/photo/14.jpg',
-					name: '小七孔',
-					price: '￥168',
-					slogan: '1235人付款'
-				},
-				{
-					goods_id: 6,
-					img: 'http://localhost/photo/8.jpg',
-					name: '好看的湖',
-					price: '￥168',
-					slogan: '1235人付款'
-				},
-				{
-					goods_id: 7,
-					img: 'http://localhost/photo/9.jpg',
-					name: '夜色',
-					price: '￥168',
-					slogan: '1235人付款'
-				},
-				{
-					goods_id: 8,
-					img: 'http://localhost/photo/10.jpg',
-					name: '黄昏时的街道',
-					price: '￥168',
-					slogan: '1235人付款'
-				},
-				{
-					goods_id: 9,
-					img: 'http://localhost/photo/11.jpg',
-					name: '上海外滩',
-					price: '￥168',
-					slogan: '1235人付款'
-				}
+				
 			],
 			loadingText: '正在加载...'
 		};
