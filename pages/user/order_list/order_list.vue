@@ -9,7 +9,7 @@
 		<!-- 考虑非APP端长列表和复杂的DOM使用scroll-view会卡顿，所以漂浮顶部选项卡使用page本身的滑动 -->
 		<view class="order-list">
 			<view class="list">
-				<view class="onorder" v-if="list.length==0">
+				<view class="onorder" v-if="list.length">
 					<image src="../../../static/img/noorder.png"></image>
 					<view class="text">
 						没有相关订单
