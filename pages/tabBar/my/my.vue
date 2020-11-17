@@ -65,12 +65,12 @@
 				
 				// 工具栏列表
 				mytoolbarList:[
-					{url:'../../user/Forthepayment/Forthepayment',text:'待付款',img:'/static/img/icon/liwu.png'},
-					{url:'../../user/Toevaluate/Toevaluate',text:'待评价',img:'/static/img/icon/liwu.png'},
-					{url:'../../user/Purchaserecords/Purchaserecords',text:'购买记录',img:'/static/img/icon/liwu.png'},
-					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/icon/like.png'},
-					{url:'../../user/Browsethefootprint/Browsethefootprint',text:'浏览足迹',img:'/static/img/icon/youhui.png'}, 
-					{url:'../../user/celler/celler',text:'商家认证',img:'/static/img/icon/liwu.png'},
+					{url:'../../user/Forthepayment/Forthepayment',text:'待付款',img:'/static/img/icon/dollar.png'},
+					{url:'../../user/Toevaluate/Toevaluate',text:'待评价',img:'/static/img/icon/editor.png'},
+					{url:'../../user/Purchaserecords/Purchaserecords',text:'购买记录',img:'/static/img/icon/search cart.png'},
+					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/icon/smile.png'},
+					{url:'../../user/Browsethefootprint/Browsethefootprint',text:'浏览足迹',img:'/static/img/icon/clock.png'}, 
+					{url:'../../user/celler/celler',text:'商家认证',img:'/static/img/icon/bussiness-man.png'},
 					
 				
 					
