@@ -54,13 +54,26 @@
 				<view class="nominal">
 					添加图片
 				</view>
+				
+			</view>
+			<view class="row">
+				
+				<view class="addImg">
+					<view v-for="(url,index) in urls" >
+						<image  :src="url" ></image>
+					</view>
+					<view>
+						<image id="imageChoose" src="../../static/img/icon/add.png"  @tap="choose"></image>
+					</view>
+						
+				</view>
 				<!-- <view class="input switch">
 					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
 				</view> -->
 				<view>
-					<image id="imageChoose" src="../../static/img/emoji/104.gif" mode="bottom" @tap="choose"></image>
+					
 				</view>
-
+			
 			</view>
 		</view>
 		<view class="save" @tap="save">
@@ -86,7 +99,9 @@
 				id: '',
 				name: '',
 				tel: '',
+				urls: [],
 				detailed: '',
+				name1: "",
 				isDefault: false,
 				cityPickerValue: [0, 0, 1],
 				themeColor: '#007AFF',
@@ -97,11 +112,19 @@
 				}
 			};
 		},
+		watch: {
+			urls(val) {
+				console.log(val)
+				this.urls = val
+			}
+		},
 		methods: {
 			choose() {
+				var that =this
 				wx.chooseImage({
 					success: function(res) {
-						console.log(res.tempFilePaths)
+						that.urls.push(res.tempFilePaths[0]) 
+						console.log(this.urls)
 						// document.getElementById("imageChoose").
 					},
 				});
@@ -222,6 +245,19 @@
 	};
 </script>
 <style lang="scss">
+	.addImg {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		image{
+			width: 200rpx;
+			height: 200rpx;
+			margin: 10rpx;
+		}
+	}
 	.save {
 		view {
 			display: flex;

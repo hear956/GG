@@ -7,17 +7,19 @@
 		</view>
 		<!-- 账号密码输入框 -->
 		<view class="form">
-			<view class="username">
+			<!-- <view class="username">
 				<input placeholder="请输入手机号" v-model="phoneNumber" placeholder-style="color: rgba(255,255,255,0.8);"/>
 			</view>
 			<view class="password">
 				<input placeholder="请输入密码" v-model="passwd" password=true placeholder-style="color: rgba(255,255,255,0.8);"/>
 			</view>
-			<view class="btn" @tap="doLogin">登 录</view>
-			<view class="res">
+			<view class="btn" @tap="doLogin">登 录</view> -->
+			<!-- <button class="btn" open-type="getPhoneNumber" @getphonenumber="wxLogin">微 信 一 键 登 录</button> -->
+			<button class="btn" @click="wxLogin">微 信 一 键 登 录</button>
+			<!-- <view class="res">
 				<view @tap="toPage('register')">用户注册</view>
 				<view @tap="toPage('resetpasswd')">忘记密码</view>
-			</view>
+			</view> -->
 		</view>
 		<!-- 第三方登录 -->
 		<view class="oauth" v-if="isShowOauth">
@@ -56,7 +58,8 @@
 			// #ifdef APP-PLUS
 				this.isShowOauth=true;
 			// #endif
-			this.getProvider();
+			// this.getProvider();
+			
 			
 		}, 
 		methods: {
@@ -155,6 +158,26 @@
 						}
 					});
 				},1000)
+			},
+			wxLogin() {
+				uni.setStorage({
+				    key: 'isLogin',
+				    data: 'true',
+				    success: function () {
+				    },
+					fail: (e) => {
+						console.log(e);
+					}
+				});
+				uni.reLaunch({
+					url: '/pages/tabBar/index/index',
+					success: (info) => {
+						console.log(info)
+					},
+					fail: (err) => {
+						console.log(err);
+					}
+				})
 			}
 		}
 	}
