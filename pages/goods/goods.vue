@@ -224,7 +224,7 @@ export default {
 					{name:"极速退款",description:"此商品享受退货极速退款服务"},
 					{name:"7天退换",description:"此商品享受7天无理由退换服务"}
 				],
-				spec:["标准套餐","套餐一","套餐二","套餐三"],
+				spec:["标准套餐"],
 				comment:{
 					number:102,
 					userface:'../../static/img/face.jpg',
