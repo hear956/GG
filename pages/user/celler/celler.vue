@@ -55,10 +55,19 @@
 			</view>
 			<view class="row">
 				<view class="nominal">
-					添加商铺图片
+					添加图片
 				</view>
-				<view class="input switch">
-					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
+				
+			</view>
+			<view class="row">
+				<view class="addImg">
+					<view v-for="(url,index) in urls" >
+						<image  :src="url" ></image>
+					</view>
+					<view>
+						<image id="imageChoose" src="/static/img/icon/add.png"  @tap="choose"></image>
+					</view>
+						
 				</view>
 			</view>
 			<view class="row" v-if="editType=='edit'" @tap="del">
@@ -67,7 +76,7 @@
 		</view>
 		<view class="save" @tap="save">
 			<view class="btn">
-				发布拼团
+				申请认证
 			</view>
 	
 		</view>
@@ -87,6 +96,7 @@
 				id:'',
 				name:'',
 				tel:'',
+				urls: [],
 				detailed:'',
 				isDefault:false,
 				cityPickerValue: [0, 0, 1],
@@ -96,6 +106,16 @@
 		},
 		
 		methods: {
+			choose() {
+				var that =this
+				wx.chooseImage({
+					success: function(res) {
+						that.urls.push(res.tempFilePaths[0]) 
+						console.log(this.urls)
+						// document.getElementById("imageChoose").
+					},
+				});
+			},
 			onCancel(e) {
 				console.log(e)
 			},
@@ -213,6 +233,19 @@
 </script>
 
 <style lang="scss">
+	.addImg {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		image{
+			width: 200rpx;
+			height: 200rpx;
+			margin: 10rpx;
+		}
+	}
 
 .save{
 		view{

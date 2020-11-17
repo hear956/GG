@@ -56,7 +56,7 @@
 				//分类列表
 				categoryList:[
 					{id:1,title:'景点',banner:'/static/img/category/banner.jpg',list:[
-						{name:'荔波小七孔',	img:'http://localhost/photo/.jpg'},
+						{name:'小七孔',	img:'http://localhost/photo/1.jpg'},
 						{name:'中国天眼',	img:'http://localhost/photo/2.jpg'},
 						{name:'荔波茂兰自然保护区',	img:'http://localhost/photo/3.jpg'}
 					
@@ -92,7 +92,7 @@
 				this.headerPosition = "absolute";
 			}
 		},
-		onLoad() {
+	/* 	onLoad() {
 			this.amapPlugin = new amap.AMapWX({  
 				//高德地图KEY，随时失效，请务必替换为自己的KEY，参考：http://ask.dcloud.net.cn/article/35070
 				key: '7c235a9ac4e25e482614c6b8eac6fd8e'  
@@ -103,7 +103,7 @@
 					this.city = data[0].regeocodeData.addressComponent.city.replace(/市/g,'');//把"市"去掉
 				}  
 			}); 
-		},
+		}, */
 		methods: {
 			//消息列表
 			toMsg(){

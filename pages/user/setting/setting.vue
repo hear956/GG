@@ -10,11 +10,11 @@
 				</view>
 				<view class="row">
 					<view class="title">昵称</view>
-					<view class="right"><view class="tis">大黑哥</view><view class="icon xiangyou"></view></view>
+					<view class="right"><view class="tis">hear956</view><view class="icon xiangyou"></view></view>
 				</view>
 				<view class="row">
 					<view class="title">个性签名</view>
-					<view class="right"><view class="tis">这人太懒了，什么都不写</view><view class="icon xiangyou"></view></view>
+					<view class="right"><view class="tis">这个人很懒，什么都没写</view><view class="icon xiangyou"></view></view>
 				</view>
 				<view class="row">
 					<view class="title">收货地址</view>

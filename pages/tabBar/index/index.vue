@@ -117,7 +117,7 @@
 				headerTop: null,
 				statusTop: null,
 				nVueTitle: null,
-				city: '贵阳',
+				city: '黔南',
 				currentSwiper: 0,
 				// 轮播图片
 				swiperList: [{

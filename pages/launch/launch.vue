@@ -70,9 +70,7 @@
 				<!-- <view class="input switch">
 					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
 				</view> -->
-				<view>
-					
-				</view>
+				
 			
 			</view>
 		</view>
@@ -101,7 +99,7 @@
 				tel: '',
 				urls: [],
 				detailed: '',
-				name1: "",
+				name1: '',
 				isDefault: false,
 				cityPickerValue: [0, 0, 1],
 				themeColor: '#007AFF',
