@@ -266,8 +266,10 @@
         ,{
             "path" : "pages/user/Forthepayment/Forthepayment",
             "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
+            { "navigationBarTitleText": "待付款",
+			"navigationBarBackgroundColor":"#595BB3",
+				"navigationBarTextStyle":"white",
+                
                 "enablePullDownRefresh": false
             }
             
@@ -276,8 +278,12 @@
             "path" : "pages/user/Toevaluate/Toevaluate",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+               "navigationBarTitleText": "购买记录",
+                   "navigationBarBackgroundColor":"#595BB3",
+                   	"navigationBarTextStyle":"white",
+                   	"app-plus":{
+                   		"bounce":"none"
+               }
             }
             
         }
@@ -285,11 +291,15 @@
             "path" : "pages/user/Purchaserecords/Purchaserecords",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "购买记录",
+                "navigationBarBackgroundColor":"#595BB3",
+                	"navigationBarTextStyle":"white",
+                	"app-plus":{
+                		"bounce":"none"
             }
             
         }
+		}
         ,{
             "path" : "pages/user/Browsethefootprint/Browsethefootprint",
             "style" :                                                                                    
@@ -351,21 +361,21 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/tabBar/index/index",
-				"iconPath": "static/img/icon/1.png",
-				"selectedIconPath": "static/img/icon/4.png",
+				"iconPath": "static/img/icon/home.png",
+				"selectedIconPath": "static/img/icon/home.png",
 				"text": "首页"
 			},
 			
 			{
 				"pagePath": "pages/tabBar/home/home",
-				"iconPath": "static/img/icon/2.png",
-				"selectedIconPath": "static/img/icon/5.png",
+				"iconPath": "static/img/icon/writing gg.png",
+				"selectedIconPath": "static/img/icon/writing gg.png",
 				"text": "订单"
 			},
 			{
 				"pagePath": "pages/tabBar/my/my",
-				"iconPath": "static/img/icon/3.png",
-				"selectedIconPath": "static/img/icon/6.png",
+				"iconPath": "static/img/icon/user center.png",
+				"selectedIconPath": "static/img/icon/user center.png",
 				"text": "我的"
 			}
 		]
