@@ -71,10 +71,10 @@
 					{id:3,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
 				],
 				shopList:[
-					{id:1,name:"冰鲜专卖店",img:"/static/img/shop/1.jpg"},
-					{id:2,name:"果蔬天下",img:"/static/img/shop/2.jpg"},
-					{id:3,name:"办公耗材用品店",img:"/static/img/shop/3.jpg"},
-					{id:4,name:"天天看好书",img:"/static/img/shop/4.jpg"}
+					{id:1,name:"少数民族服饰体验店",img:"/static/img/shop/1.jpg"},
+					{id:2,name:"黔南特色风味店",img:"/static/img/shop/2.jpg"},
+					{id:3,name:"走马酒店",img:"/static/img/shop/3.jpg"},
+					{id:4,name:"意境民宿",img:"/static/img/shop/4.jpg"}
 				],
 				headerTop:0,
 				//控制滑动效果

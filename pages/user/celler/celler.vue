@@ -66,7 +66,7 @@
 			</view>
 		</view>
 		<view class="save" @tap="save">
-			<view class="btn" @click="fabu">
+			<view class="btn">
 				发布拼团
 			</view>
 	
@@ -164,18 +164,17 @@
 						data:data,
 						success() {
 							uni.hideLoading();
-							uni.navigateBack();
+							uni.navigateTo({
+								url:'success/success'
+							})
+							// uni.navigateBack();
 						}
 					})
 				},300)
 				
 				
 			},
-			fabu(){
-				uni.navigateTo({
-					url:"./success/success.vue"
-				})
-			}
+			
 		},
 		onLoad(e) {
 			//获取传递过来的参数

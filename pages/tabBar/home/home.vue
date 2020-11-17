@@ -31,19 +31,19 @@
 						</view>
 						<view class="right">
 							<view class="ticket">
-								<view class="num">
+<!-- 								<view class="num">
 									{{row.ticket}}
 								</view>
 								<view class="unit">
 									元
-								</view>
+								</view> -->
 							</view>
 							<view class="criteria">
 								{{row.criteria}}
 							</view>
-							<view class="use">
+							<!-- <view class="use">
 								去使用
-							</view>
+							</view> -->
 						</view>
 					</view>
 				</view>
@@ -75,16 +75,16 @@
 								<view class="num">
 									{{row.ticket}}
 								</view>
-								<view class="unit">
+								<!-- <view class="unit">
 									元
-								</view>
+								</view> -->
 							</view>
 							<view class="criteria">
 								{{row.criteria}}
 							</view>
-							<view class="use">
+							<!-- <view class="use">
 								去查看
-							</view>
+							</view> -->
 						</view>
 					</view>
 				</view>
@@ -116,16 +116,16 @@
 									<view class="num">
 										{{row.ticket}}
 									</view>
-									<view class="unit">
+									<!-- <view class="unit">
 										元
-									</view>
+									</view> -->
 								</view>
 								<view class="criteria">
 									{{row.criteria}}
 								</view>
-								<view class="use">
+								<!-- <view class="use">
 									去查看
-								</view>
+								</view> -->
 							</view>
 						</view>
 					</view>
@@ -145,17 +145,17 @@
 		
 			
 				couponValidList:[
-					{id:1,title:"日常用品立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"满50使用"},
-					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"100",criteria:"满500使用"},
-					{id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},
-					{id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
+					{id:1,title:"小七孔门票+特产套餐",termStart:"2020-11-18",termEnd:"2020-11-20",},
+					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",}
 					
 				],
 				couponinvalidList:[
-					{id:1,title:"日常用品立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"满50使用"},
-					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"100",criteria:"满500使用"},
-					{id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},
-					{id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
+					{id:1,title:"",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},
+					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
 				],
 				headerTop:0,
 				//控制滑动效果
@@ -298,7 +298,7 @@
 		width: 94%;
 		height: 95upx;
 		padding: 0 3%;
-		border-bottom: solid 1upx #dedede;
+		border-bottom: solid 1upx #595BB3;
 		position: fixed;
 		top: 0;
 		z-index: 10;
