@@ -6,7 +6,7 @@
 					商品标题
 				</view>
 				<view class="input">
-					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
+					<input placeholder="请为此次拼团设置主题" type="text" v-model="name" />
 				</view>
 			</view>
 			<view class="row">
