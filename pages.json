@@ -8,12 +8,7 @@
 				"onReachBottomDistance":50,
 				"app-plus": {
 					"titleNView": false ,//禁用原生导航栏
-					"softinputNavBar":"none",
-					"subNVues":[{  
-						"id": "indexTitleNvue", // 唯一标识  
-						"path": "pages/tabBar/index/subNvue/homeTitleNvue", // 页面路径  
-						"type":"navigationBar"
-					}]
+					"softinputNavBar":"none"
 				}
 			}
 		},
@@ -156,17 +151,6 @@
 			}
         }
         ,{
-            "path" : "pages/user/coupon/coupon",
-            "style" : {
-				"navigationBarTitleText": "优惠券",
-				"navigationBarBackgroundColor":"#595BB3",
-				"navigationBarTextStyle":"white",
-				"app-plus":{
-					"bounce":"none"
-				}
-			}
-        }
-        ,{
             "path" : "pages/user/keep/keep",
             "style" : {
 				"navigationBarTitleText": "我的收藏",
@@ -191,15 +175,6 @@
             "style" : {
 				"navigationBarBackgroundColor":"#ffffff",
 				"navigationBarTitleText":"编辑收件人地址",
-				"backgroundColorTop":"#ffffff",
-				"backgroundColorBottom":"#ffffff"
-			}
-        }
-        ,{
-            "path" : "pages/user/deposit/deposit",
-            "style" : {
-				"navigationBarBackgroundColor":"#ffffff",
-				"navigationBarTitleText":"充值",
 				"backgroundColorTop":"#ffffff",
 				"backgroundColorBottom":"#ffffff"
 			}
@@ -241,15 +216,15 @@
             }
             
         }
-        ,{
-            "path" : "pages/celler/celler",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+        // ,{
+        //     "path" : "pages/celler/celler",
+        //     "style" :                                                                                    
+        //     {
+        //         "navigationBarTitleText": "",
+        //         "enablePullDownRefresh": false
+        //     }
             
-        }
+        // }
         ,{
             "path" : "pages/tabBar/home/home",
             "style" :                                                                                    
@@ -272,6 +247,55 @@
 				"app-plus":{
 					"bounce":"none"
 				}
+				
+            }
+            
+        } ,{
+            "path" : "pages/user/celler/celler",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家认证",
+           "navigationBarBackgroundColor":"#595BB3",
+           	"navigationBarTextStyle":"white",
+           	"app-plus":{
+           		"bounce":"none"
+           	}
+           }
+            
+        }
+        ,{
+            "path" : "pages/user/Forthepayment/Forthepayment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Toevaluate/Toevaluate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Purchaserecords/Purchaserecords",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/Browsethefootprint/Browsethefootprint",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
             }
             
         }
