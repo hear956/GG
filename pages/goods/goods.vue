@@ -202,7 +202,7 @@ export default {
 			// #endif
 			//轮播主图数据
 			swiperList: [
-				{ id: 1, img: 'http://localhost/photo/qikong.jpg' },
+				{ id: 1, img: 'http://localhost/photo/xiaoqik.jpg' },
 				{ id: 2, img: 'http://localhost/photo/hotel.jpg' },
 				
 			],

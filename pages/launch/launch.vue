@@ -6,16 +6,20 @@
 					商品标题
 				</view>
 				<view class="input">
-					<input placeholder="请为此次拼团设置主题" type="text" v-model="name" />
+					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
 				</view>
 			</view>
 			<view class="row">
 				<view class="nominal">
-					商品标题
+					商品类型
 				</view>
-				<view class="input">
+				<!-- <view class="input">
 					<input placeholder="个人拼团/任务拼团" type="text" v-model="name" />
-				</view>
+				</view> -->
+				<select name="" id="select">
+					<option value ="volvo">个人拼团</option>
+					<option value ="saab">任务拼团</option>
+				</select>
 			</view>
 			<view class="row">
 				<view class="nominal">
@@ -52,15 +56,11 @@
 				<view>
 					<image id="imageChoose" src="../../static/img/emoji/104.gif" mode="bottom"@tap="choose"></image>
 				</view>
-			</view>
-			<view class="row" v-if="editType=='edit'" @tap="del">
-				<view class="del">
-					删除收货
-				</view>
+			
 			</view>
 		</view>
 		<view class="save" @tap="save">
-			<view class="btn">
+			<view class="btn" @click="tiaozhuan">
 				发布拼团
 			</view>
 		</view>
@@ -89,6 +89,11 @@
 			};
 		},
 		methods: {
+			tiaozhuan(){
+				uni.navigateTo({
+					url:"./success/success"
+				})
+			},
 			choose(){
 				wx.chooseImage({success: function(res) {
 					console.log(res.tempFilePaths)
@@ -108,39 +113,20 @@
 			isDefaultChange(e){
 				this.isDefault = e.detail.value;
 			},
-			del(){
-				uni.showModal({
-					title: '删除提示',
-					content: '你将删除这个收货地址',
-					success: (res)=>{
-						if (res.confirm) {
-							uni.setStorage({
-								key:'delAddress',
-								data:{id:this.id},
-								success() {
-									uni.navigateBack();
-								}
-							})
-						} else if (res.cancel) {
-							console.log('用户点击取消');
-						}
-					}
-				});
-				
-			},
+			
 			save(){
 				let data={"name":this.name,"head":this.name.substr(0,1),"name1":this.name1,"tel":this.tel,"address":{"region":this.region,"detailed":this.detailed},"isDefault":this.isDefault}
 				if(this.editType=='edit'){
 					data.id = this.id
 				}
-				if(!data.name){
+				if(!data.name1){
 					uni.showToast({title:'请输入拼团主题',icon:'none'});
 					return ;
 				}
-				if(!data.name1){
-					uni.showToast({title:'请输入拼团类型',icon:'none'});
-					return ;
-				}
+				// if(!data.name){
+				// 	uni.showToast({title:'请选择拼团类型',icon:'none'});
+				// 	return ;
+				// }
 				if(!data.tel){
 					uni.showToast({title:'请输入拼团相关信息',icon:'none'});
 					return ;
@@ -163,7 +149,7 @@
 						data:data,
 						success() {
 							uni.hideLoading();
-							uni.navigateBack();
+							// uni.navigateBack();
 						}
 					})
 				},300)
@@ -244,9 +230,11 @@
 		}
 		.row{
 			width: 94%;
-			
 			margin: 0 3%;
 			border-top: solid 1upx #eee;
+			#select{
+				border: none;
+			}
 			.nominal{
 				width: 30%;
 				height: 120upx;

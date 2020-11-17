@@ -66,7 +66,7 @@
 			</view>
 		</view>
 		<view class="save" @tap="save">
-			<view class="btn">
+			<view class="btn" @click="fabu">
 				发布拼团
 			</view>
 	
@@ -111,8 +111,7 @@
 			},
 			del(){
 				uni.showModal({
-					title: '删除提示',
-					content: '你将删除这个收货地址',
+					
 					success: (res)=>{
 						if (res.confirm) {
 							uni.setStorage({
@@ -171,6 +170,11 @@
 				},300)
 				
 				
+			},
+			fabu(){
+				uni.navigateTo({
+					url:"./success/success.vue"
+				})
 			}
 		},
 		onLoad(e) {
