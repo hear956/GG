@@ -509,7 +509,7 @@ page {
   background-color: #f0b46c;
 }
 .footer .btn .buy {
-  background-color: #f06c7a;
+  background-color: #595BB3;
 }
 .popup {
   position: fixed;

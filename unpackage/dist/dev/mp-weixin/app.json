@@ -13,25 +13,27 @@
     "pages/user/setting/setting",
     "pages/msg/msg",
     "pages/msg/chat/chat",
-    "pages/user/coupon/coupon",
     "pages/user/keep/keep",
     "pages/user/address/address",
     "pages/user/address/edit/edit",
-    "pages/user/deposit/deposit",
     "pages/pay/payment/payment",
     "pages/pay/success/success",
     "pages/goods/ratings/ratings",
     "pages/launch/launch",
-    "pages/celler/celler",
     "pages/tabBar/home/home",
     "common/search/search",
+    "pages/user/celler/celler",
+    "pages/user/Forthepayment/Forthepayment",
+    "pages/user/Toevaluate/Toevaluate",
+    "pages/user/Purchaserecords/Purchaserecords",
+    "pages/user/Browsethefootprint/Browsethefootprint",
     "common/success/success",
     "pages/goods/ratings/goods1/goods1"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "",
+    "navigationBarTitleText": "走马",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#ffffff",
     "backgroundColorTop": "#ffffff",
@@ -64,5 +66,6 @@
     ]
   },
   "permission": {},
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap91.json"
 }
