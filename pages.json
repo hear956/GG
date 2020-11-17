@@ -278,7 +278,7 @@
             "path" : "pages/user/Toevaluate/Toevaluate",
             "style" :                                                                                    
             {
-               "navigationBarTitleText": "购买记录",
+               "navigationBarTitleText": "待评价",
                    "navigationBarBackgroundColor":"#595BB3",
                    	"navigationBarTextStyle":"white",
                    	"app-plus":{
