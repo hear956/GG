@@ -14,7 +14,7 @@
 					商品标题
 				</view>
 				<view class="input">
-					<input placeholder="个人拼团/任务拼团" type="text" v-model="name1" />
+					<input placeholder="个人拼团/任务拼团" type="text" v-model="name" />
 				</view>
 			</view>
 			<view class="row">
@@ -46,9 +46,9 @@
 				<view class="nominal">
 					添加图片
 				</view>
-				<view class="input switch">
+				<!-- <view class="input switch">
 					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
-				</view>
+				</view> -->
 				<view>
 					<image id="imageChoose" src="../../static/img/emoji/104.gif" mode="bottom"@tap="choose"></image>
 				</view>

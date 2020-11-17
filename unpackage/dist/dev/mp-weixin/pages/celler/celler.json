@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
-  }
-}
