@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "商家认证",
-  "navigationBarBackgroundColor": "#595BB3",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
-  }
-}

@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<baidu-map class="map-contain" :scroll-wheel-zoom="true" :center="center" :zoom="zoom" MapType="BMAP_SATELLITE_MAP" @ready="mapReady">
+			 
+		</baidu-map>
 		<!-- 状态栏 -->
 		<view v-if="showHeader" class="status" :style="{ position: headerPosition,top:statusTop,opacity: afterHeaderOpacity}"></view>
 		<!-- 顶部导航栏 -->
@@ -7,7 +10,7 @@
 			<!-- 定位城市 -->
 			<view class="addr">
 				<view >
-					<image class="icon" src="../../../static/img/icon/dingwei.png"></image>
+					<image class="icon" src="../../../static/img/icon/dingwei.png" ></image>
 				</view>
 				{{ city }}
 			</view>
@@ -82,7 +85,7 @@
 			<view class="product-list">
 				<view
 					class="product"
-					v-for="product in productList"
+					v-for="product in productList1"
 					:key="product.goods_id"
 					@tap="toGoods(product)"
 				>
@@ -102,10 +105,24 @@
 <script>
 var ttt = 0;
 //高德SDK123
+  import BaiduMap from 'vue-baidu-map'
 
+
+import tuijian from "../../../component/test.js"
+var address = ""
 export default {
 	data() {
 		return {
+			
+			zoom:18,//地图相关设置
+			center:{lng:0,lat:0},
+			 amapPlugin: null,  
+			  key: '8aa85554d1bccf71d9c2ba833c4a5514',
+			  addressName: '',
+			  weather: {  
+				  hasData: false,  
+				  data: []  
+			  },
 			showHeader:true,
 			afterHeaderOpacity: 1,//不透明度
 			headerPosition: 'fixed',
@@ -124,7 +141,7 @@ export default {
 				{ id: 6, src: 'url6', img: 'http://localhost/photo/6.jpg' },
 				{ id: 7, src: 'url7', img: 'http://localhost/photo/7.jpg' }
 			],
-			
+			productList1: tuijian.data,
 			Promotion: [],
 			//猜你喜欢列表
 			productList: [
@@ -168,6 +185,12 @@ export default {
 			loadingText: '正在加载...'
 		};
 	},
+	watch:{
+		city(val){
+			console.log(val)
+			this.city = val
+			}
+		},
 	onPageScroll(e) {
 		//兼容iOS端下拉时顶部漂移
 		this.headerPosition = e.scrollTop>=0?"fixed":"absolute";
@@ -182,6 +205,7 @@ export default {
 	},
 	//上拉加载，需要自己在page.json文件中配置"onReachBottomDistance"
 	onReachBottom() {
+		
 		uni.showToast({ title: '触发上拉加载' });
 		let len = this.productList.length;
 		if (len >= 40) {
@@ -205,6 +229,7 @@ export default {
 	},
 	onLoad() {
 		
+		
 		// #ifdef APP-PLUS
 		this.nVueTitle = uni.getSubNVueById('homeTitleNvue');
 		this.nVueTitle.onMessage(res => {
@@ -216,26 +241,26 @@ export default {
 		this.showHeader = false;
 		this.statusHeight = plus.navigator.getStatusbarHeight();
 		// #endif
-		this.amapPlugin = new amap.AMapWX({
-			//高德地图KEY，随时失效，请务必替换为自己的KEY，参考：http://ask.dcloud.net.cn/article/35070
-			key: '7c235a9ac4e25e482614c6b8eac6fd8e'
-		});
-		//定位地址
-		this.amapPlugin.getRegeo({
-			success: data => {
-				this.city = data[0].regeocodeData.addressComponent.city.replace(/市/g, ''); //把"市"去掉
-				// #ifdef APP-PLUS
-				this.nVueTitle.postMessage({type: 'location',city:this.city});
-				// #endif
-			}
-		});
+
 		//开启定时器
-		this.Timer();
 		//加载活动专区
-		this.loadPromotion();
+
 	},
 	methods: {
-		
+		mapReady({BMap, map}){
+			let that = this;
+			var geolocation = new BMap.Geolocation();
+			// 开启SDK辅助定位
+			geolocation.enableSDKLocation();
+			geolocation.getCurrentPosition(function(r) {
+				
+				console.log(r.address.city);
+				address = r.address.city
+				console.log(address);
+			}, {
+					enableHighAccuracy: true//要求浏览器获取最佳结果
+				})
+		},
 		//消息列表
 		toMsg(){
 			uni.navigateTo({
@@ -267,9 +292,11 @@ export default {
 		},
 		//商品跳转
 		toGoods(e) {
+			console.log(address)
+			this.city = address.replace("市","")
 			uni.showToast({ title: '商品' + e.goods_id, icon: 'none' });
 			uni.navigateTo({
-				url: '../../goods/goods'
+				url: '../../goods/goods?id=' + e.goods_id
 			});
 		},
 		//轮播图指示器
