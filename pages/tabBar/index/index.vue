@@ -304,6 +304,9 @@
 					title: e.src,
 					icon: 'none'
 				});
+				uni.navigateTo({
+					url: '../../goods/goods'
+				})
 			},
 			//分类跳转
 			toCategory(e) {

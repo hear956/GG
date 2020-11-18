@@ -6,19 +6,17 @@
 					商品标题
 				</view>
 				<view class="input">
-					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
+					<input placeholder="请输入商品标题" type="text" v-model="name1" />
 				</view>
 			</view>
 			<view class="row">
 				<view class="nominal">
 					商品类型
 				</view>
-				<!-- <view class="input">
-					<input placeholder="个人拼团/任务拼团" type="text" v-model="name" />
-				</view> -->
+		
 				<radio-group name="radio" class="radio">
 					<label class="label">
-						<radio value="radio1" checked="checked"/><text>个人拼团</text>
+						<radio value="radio1" checked="checked"/><text>商品拼团</text>
 					</label>
 					<label class="label">
 						<radio value="radio2" /><text>任务拼团</text>
@@ -30,7 +28,7 @@
 					商品信息
 				</view>
 				<view class="input">
-					<input placeholder="请输入拼团相关信息" type="text" v-model="tel" />
+					<input placeholder="请输入商品描述信息" type="text" v-model="tel" />
 				</view>
 			</view>
 			<view class="row">
@@ -76,7 +74,7 @@
 		</view>
 		<view class="save" @tap="save">
 			<view class="btn">
-				发布拼团
+				发布商品
 			</view>
 		</view>
 		<mpvue-city-picker :themeColor="themeColor" ref="mpvueCityPicker" :pickerValueDefault="cityPickerValue" @onCancel="onCancel"
