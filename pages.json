@@ -265,8 +265,12 @@
 		}, {
 			"path": "pages/user/Browsethefootprint/Browsethefootprint",
 			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "浏览足迹",
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
 			}
 
 		}, {

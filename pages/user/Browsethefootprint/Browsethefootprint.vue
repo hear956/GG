@@ -66,9 +66,9 @@
 		data() {
 			return {
 				goodsList:[
-					{id:1,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:2,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:3,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
+					{id:1,img:'/static/img/goods/14.jpg',name:'小七孔门票+腾杨客栈',spec:'规格:S码',price:320,number:1,selected:false},
+					{id:2,img:'/static/img/goods/skyeye.jpg',name:'中国天眼+风猪套餐',spec:'规格:S码',price:300,number:1,selected:false},
+					{id:3,img:'/static/img/goods/qikong.jpg',name:'小七孔门票+纪念品',spec:'规格:S码',price:200,number:1,selected:false},
 				],
 				shopList:[
 					{id:1,name:"少数民族服饰体验店",img:"/static/img/shop/1.jpg"},

@@ -1,9 +1,10 @@
 <template>
 	<view>
 		<view class="tabr" :style="{top:headerTop}">
-			<view :class="{on:typeClass=='goods'}" @tap="switchType('goods')">商品({{goodsList.length}})</view>
-			<view :class="{on:typeClass=='shop'}"  @tap="switchType('shop')">店铺({{shopList.length}})</view>
-			<view class="border" :class="typeClass"></view>
+			<view class="zhongjian">商品</view>
+			<!-- <view :class="{on:typeClass=='goods'}" @tap="switchType('goods')">商品({{goodsList.length}})</view> -->
+			<!-- <view :class="{on:typeClass=='shop'}"  @tap="switchType('shop')">店铺({{shopList.length}})</view> -->
+			<!-- <view class="border" :class="typeClass"></view> -->
 		</view>
 		<view class="place" ></view>
 		<view class="list">
@@ -24,9 +25,9 @@
 							<view class="info">
 								<view class="title">{{row.name}}</view>
 								<view class="price-number">
-									<view class="keep-num">
+									<!-- <view class="keep-num">
 										905人收藏
-									</view>
+									</view> -->
 									<view class="price">￥{{row.price}}</view>
 									
 								</view>
@@ -66,15 +67,15 @@
 		data() {
 			return {
 				goodsList:[
-					{id:1,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:2,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:3,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
+					{id:1,img:'/static/img/goods/xiaoqik.jpg',name:'小七孔门票+腾杨客栈',spec:'规格:S码',price:320,number:1,selected:false},
+					{id:2,img:'/static/img/goods/skyeye.jpg',name:'中国天眼+纪念品',spec:'规格:S码',price:200,number:1,selected:false},
+					// {id:3,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
 				],
-				shopList:[
-					{id:1,name:"少数民族服饰体验店",img:"/static/img/shop/1.jpg"},
-					{id:2,name:"黔南特色风味店",img:"/static/img/shop/2.jpg"},
-					{id:3,name:"走马酒店",img:"/static/img/shop/3.jpg"},
-					{id:4,name:"意境民宿",img:"/static/img/shop/4.jpg"}
+				 shopList:[
+				 	{id:1,name:"少数民族服饰体验店",img:"/static/img/shop/1.jpg"},
+				 	{id:2,name:"黔南特色风味店",img:"/static/img/shop/2.jpg"},
+				 	{id:3,name:"走马酒店",img:"/static/img/shop/3.jpg"},
+				 	{id:4,name:"意境民宿",img:"/static/img/shop/4.jpg"}
 				],
 				headerTop:0,
 				//控制滑动效果
@@ -108,22 +109,22 @@
 			// #endif
 		},
 		methods: {
-			switchType(type){
-				if(this.typeClass==type){
-					return ;
-				}
-				uni.pageScrollTo({
-					scrollTop:0,
-					duration:0
-				})
-				this.typeClass = type;
-				this.subState = this.typeClass==''?'':'show'+type;
-				setTimeout(()=>{
-					this.oldIndex = null;
-					this.theIndex = null;
-					this.subState = this.typeClass=='goods'?'':this.subState;
-				},200)
-			},
+			// switchType(type){
+			// 	if(this.typeClass==type){
+			// 		return ;
+			// 	}
+			// 	uni.pageScrollTo({
+			// 		scrollTop:0,
+			// 		duration:0
+			// 	})
+			// 	this.typeClass = type;
+			// 	this.subState = this.typeClass==''?'':'show'+type;
+			// 	setTimeout(()=>{
+			// 		this.oldIndex = null;
+			// 		this.theIndex = null;
+			// 		this.subState = this.typeClass=='goods'?'':this.subState;
+			// 	},200)
+			// },
 			//控制左滑删除效果-begin
 			touchStart(index,event){
 				//多点触控不触发
@@ -206,6 +207,7 @@
 	.hidden{
 		display: none !important;
 	}
+	
 	.place{
 		width: 100%;
 		height: 95upx;
@@ -219,6 +221,10 @@
 		position: fixed;
 		top: 0;
 		z-index: 10;
+		.zhongjian{
+			margin: 0 auto;
+			color: black;
+		}
 		view{
 			width: 50%;
 			height: 90upx;
@@ -342,7 +348,7 @@
 				flex-wrap: nowrap;
 				.goods-info{
 					width: calc(100% - 40upx);
-					padding: 20upx;
+					padding: 10upx;
 					flex-wrap: nowrap;
 					.img{
 						width: calc(30vw - 40upx);

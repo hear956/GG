@@ -194,6 +194,14 @@
 						price: '￥168',
 						slogan: '10人团'
 					},
+					{
+						goods_id: 5,
+						img: 'http://localhost/photo/jiangjiehe.jpg',
+						name: '江界河风景名胜区+烧烤套餐',
+						price: '￥268',
+						slogan: '10人团'
+					}
+					
 
 				],
 				loadingText: '正在加载...'

@@ -24,9 +24,9 @@
 							<view class="info">
 								<view class="title">{{row.name}}</view>
 								<view class="price-number">
-									<view class="keep-num">
+									<!-- <view class="keep-num">
 										905人收藏
-									</view>
+									</view> -->
 									<view class="price">￥{{row.price}}</view>
 									
 								</view>
@@ -66,9 +66,9 @@
 		data() {
 			return {
 				goodsList:[
-					{id:1,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:2,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
-					{id:3,img:'/static/img/goods/p1.jpg',name:'商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题',spec:'规格:S码',price:127.5,number:1,selected:false},
+					{id:1,img:'/static/img/goods/qikong.jpg',name:'小七孔门票+特色服装',spec:'规格:S码',price:280,number:1,selected:false},
+					{id:2,img:'/static/img/goods/skyeye.jpg',name:'中国天眼+风猪套餐',spec:'规格:S码',price:300,number:1,selected:false},
+					// {id:3,img:'/static/img/goods/p1.jpg',name:'云雾茶套餐',spec:'规格:S码',price:127.5,number:1,selected:false},
 				],
 				shopList:[
 					{id:1,name:"少数民族服饰体验店",img:"/static/img/shop/1.jpg"},
