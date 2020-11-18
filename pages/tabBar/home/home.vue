@@ -65,9 +65,7 @@
 							<view class="term">
 								{{row.termStart}} ~ {{row.termEnd}}
 							</view>
-							<view class="icon shixiao">
-								
-							</view>
+							
 							<view class="gap-top"></view>
 							<view class="gap-bottom"></view>
 						</view>
@@ -106,9 +104,7 @@
 								<view class="term">
 									{{row.termStart}} ~ {{row.termEnd}}
 								</view>
-								<view class="icon shixiao">
-									
-								</view>
+								
 								<view class="gap-top"></view>
 								<view class="gap-bottom"></view>
 							</view>
@@ -450,13 +446,7 @@
 					.gap-bottom{
 						bottom: -10upx;
 					}
-					.shixiao{
-						position: absolute;
-						right: 20upx;
-						font-size: 150upx;
-						z-index: 6;
-						color: rgba(153,153,153,0.2)
-					}
+					
 				}
 				.right{
 					flex-shrink: 0;

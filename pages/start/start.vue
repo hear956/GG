@@ -3,15 +3,19 @@
 		<view class="content">
 			<view class="row">
 				<view class="nominal">
-					商品标题
+					选择商品
 				</view>
 				<view class="input">
-					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
+					<!-- <input placeholder="请为此次拼团设置主题" type="text" v-model="name1" /> -->
+					<picker @change="bindPickerChange" :range="array">	
+							<!-- <label>国籍：</label> -->
+							<label class="">{{array[index]}}</label>
+						</picker>
 				</view>
 			</view>
 			<view class="row">
 				<view class="nominal">
-					商品类型
+					团购类型
 				</view>
 				<!-- <view class="input">
 					<input placeholder="个人拼团/任务拼团" type="text" v-model="name" />
@@ -27,18 +31,33 @@
 			</view>
 			<view class="row">
 				<view class="nominal">
-					商品信息
+					商品数量
 				</view>
 				<view class="input">
-					<input placeholder="请输入拼团相关信息" type="text" v-model="tel" />
+					<view class="number">
+						<view class="sub" @tap.stop="sub">
+							<view class="icon jian"></view>
+						</view>
+						<view class="input" @tap.stop="discard">
+							<input type="number" v-model="number" />
+						</view>
+						<view class="add"  @tap.stop="add">
+							<view class="icon jia"></view>
+						</view>
+					</view>
 				</view>
 			</view>
 			<view class="row">
 				<view class="nominal">
-					所在地区
+					团购价格
 				</view>
-				<view class="input" @tap="chooseCity">
+				<!-- <view class="input" @tap="chooseCity">
 					{{region.label}}
+				</view> -->
+				<view class="input">
+					<picker @change="bindPickerChange" :range="array1">	
+							<label class="">￥{{array1[index]}}元</label>
+						</picker>
 				</view>
 
 			</view>
@@ -47,7 +66,7 @@
 		</view>
 		<view class="save" @tap="save">
 			<view class="btn">
-				发布拼团
+				发起团购
 			</view>
 		</view>
 		<mpvue-city-picker :themeColor="themeColor" ref="mpvueCityPicker" :pickerValueDefault="cityPickerValue" @onCancel="onCancel"
@@ -78,7 +97,12 @@
 					label: "请点击选择地址",
 					value: [],
 					cityCode: ""
-				}
+				},
+				array: ["小七孔一日游","黄果树三日游","贵州七日游"],
+				array1: ["100","300","600"],
+				index: 0,
+				number: 0
+				
 			};
 		},
 		watch: {
@@ -88,6 +112,26 @@
 			}
 		},
 		methods: {
+			//减少数量
+			sub(){
+				if(this.number<=1){
+					return;
+				}
+				this.number--;
+			},
+			//增加数量
+			add(){
+				this.number++;
+			},
+			discard() {
+				//丢弃
+			},
+			bindPickerChange: function(e) {		//改变的事件名
+				//console.log('picker发送选择改变，携带值为', e.target.value)   用于输出改变索引值
+				this.index = e.target.value			//将数组改变索引赋给定义的index变量
+				// this.jg=this.array[this.index]		//将array【改变索引】的值赋给定义的jg变量
+			//	console.log("籍贯为：",this.jg)		//输出获取的籍贯值，例如：中国
+			},
 			choose() {
 				var that =this
 				wx.chooseImage({
@@ -127,18 +171,18 @@
 				if (this.editType == 'edit') {
 					data.id = this.id
 				}
-				if (!data.name1) {
+				/* if (!data.name1) {
 					uni.showToast({
 						title: '请输入拼团标题',
 						icon: 'none'
 					});
 					return;
-				}
+				} */
 				// if(!data.name){
 				// 	uni.showToast({title:'请选择拼团类型',icon:'none'});
 				// 	return ;
 				// }
-				if (!data.tel) {
+				/* if (!data.tel) {
 					uni.showToast({
 						title: '请输入拼团相关信息',
 						icon: 'none'
@@ -158,7 +202,7 @@
 						icon: 'none'
 					});
 					return;
-				}
+				} */
 				uni.showLoading({
 					title: '正在提交'
 				})
@@ -261,7 +305,46 @@
 			font-size: 30upx;
 		}
 	}
-
+.number{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.input{
+					width: 80upx;
+					height: 20upx;
+					margin: 0 10upx;
+					background-color: #f3f3f3;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					input{
+						width: 80upx;
+						height: 60upx;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						font-size: 26upx;
+					}
+				}
+				
+				.sub ,.add{
+					width: 60upx;
+					height: 60upx;
+					background-color: #f3f3f3;
+					border-radius: 5upx;
+					.icon{
+						font-size: 30upx;
+						width: 60upx;
+						height: 60upx;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						
+					}
+				}
+			}
 	.content {
 		display: flex;
 		flex-wrap: wrap;
