@@ -71,6 +71,7 @@
 					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/icon/smile.png'},
 					{url:'../../user/Browsethefootprint/Browsethefootprint',text:'浏览足迹',img:'/static/img/icon/clock.png'}, 
 					{url:'../../user/celler/celler',text:'商家认证',img:'/static/img/icon/bussiness-man.png'},
+					{url:'../../launch/launch',text:'商品发布',img:'/static/img/icon/bussiness-man.png'},
 					
 				
 					

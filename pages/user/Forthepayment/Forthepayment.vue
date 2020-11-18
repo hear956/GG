@@ -7,7 +7,7 @@
 			<!-- <view class="border" :class="typeClass"></view> -->
 		</view>
 		<view class="place" ></view>
-		<view class="list">
+		<view class="list" @tap="toPay()">
 			<!-- 优惠券列表 -->
 			<view class="sub-list goods" :class="subState">
 				<view class="tis" v-if="goodsList.length==0">没有数据~</view>
@@ -109,6 +109,12 @@
 			// #endif
 		},
 		methods: {
+		toPay() {
+		
+			uni.navigateTo({
+				url: '/pages/pay/payment/payment'
+			})
+		},
 			// switchType(type){
 			// 	if(this.typeClass==type){
 			// 		return ;

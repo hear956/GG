@@ -56,9 +56,9 @@
 				//分类列表
 				categoryList:[
 					{id:1,title:'景点',banner:'/static/img/category/banner.jpg',list:[
-						{name:'小七孔',	img:'http://localhost/photo/1.jpg'},
-						{name:'中国天眼',	img:'http://localhost/photo/2.jpg'},
-						{name:'荔波茂兰自然保护区',	img:'http://localhost/photo/3.jpg'}
+						{name:'小七孔',	img:'1.png'},
+						{name:'中国天眼',	img:'skyeye.png'},
+						{name:'荔波茂兰自然保护区',	img:'茂兰.png'}
 					
 					]},
 					{id:2,title:'餐饮',banner:'/static/img/category/banner.jpg',list:[

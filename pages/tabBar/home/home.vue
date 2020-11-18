@@ -159,8 +159,8 @@
 					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
 				],
 				couponList:[
-					{id:1,title:"",termStart:"2019-04-01",termEnd:"2019-05-30",},
-					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					{id:1,title:"特产店视频打卡",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					{id:2,title:"服饰店打卡",termStart:"2019-04-01",termEnd:"2019-05-30",},
 					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},
 					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
 				],
