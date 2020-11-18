@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "m-search": "/components/mehaotian-search-revision/mehaotian-search-revision"
+  }
+}

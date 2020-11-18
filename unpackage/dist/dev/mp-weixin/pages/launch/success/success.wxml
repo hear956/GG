@@ -1,0 +1,1 @@
+<view><view class="icon"><image src="/static/img/success.png"></image></view><view class="tis">发布拼团成功</view><view class="pay-amount">请在主页查看</view><view class="back"><view data-event-opts="{{[['tap',[['toUser',['$event']]]]]}}" class="btn" bindtap="__e">返回主页</view></view></view>

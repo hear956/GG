@@ -7,8 +7,8 @@
 				<view class="back"><view class="icon xiangqian" @tap="back" v-if="showBack"></view></view> 
 				<view class="middle"></view>
 				<view class="icon-btn">
-					<view class="icon tongzhi" @tap="toMsg"></view>
-					<view class="icon cart" @tap="joinCart"></view>
+					<!-- <view class="icon tongzhi" @tap="toMsg"></view> -->
+					<view class="icon tongzhi" @tap="joinCart"></view>
 				</view>
 			</view>
 			<!-- 头部-滚动渐变显示 -->
@@ -842,7 +842,7 @@ page {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				background-color: #f47952;
+				background-color: #595BB3;
 				font-size: 28upx;
 			}
 		}

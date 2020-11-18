@@ -360,7 +360,7 @@
 			.btn{
 				padding: 0 30upx;
 				height: 60upx;
-				background-color: #f06c7a;
+				background-color: #595BB3;
 				color: #fff;
 				display: flex;
 				justify-content: center;

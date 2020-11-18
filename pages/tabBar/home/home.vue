@@ -83,18 +83,18 @@
 							<view class="criteria">
 								{{row.criteria}}
 							</view>
-							<!-- <view class="use">
+							<view class="use">
 								去查看
-							</view> -->
+							</view>
 						</view>
 					</view>
 				</view>
 			</view>
 			<view class="sub-list invalid" :class="subState" >
-					<view class="tis" v-if="couponinvalidList.length==0">没有数据~</view>
-					<view class="row" v-for="(row,index) in couponinvalidList" :key="index" >
+					<view class="tis" v-if="couponList.length==0">没有数据~</view>
+					<view class="row" v-for="(row,index) in couponList" :key="index" >
 						<!-- 删除按钮 -->
-						<view class="menu" @tap.stop="deleteCoupon(row.id,couponinvalidList)">
+						<view class="menu" @tap.stop="deleteCoupon(row.id,couponList)">
 							<view class="icon shanchu"></view>
 						</view>
 						<!-- content -->
@@ -147,12 +147,18 @@
 			
 				couponValidList:[
 					{id:1,title:"小七孔门票+特产套餐",termStart:"2020-11-18",termEnd:"2020-11-20",},
-					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					{id:2,title:"黄果树瀑布一日游",termStart:"2019-04-01",termEnd:"2019-05-30",},
 					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",},
 					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",}
 					
 				],
 				couponinvalidList:[
+					{id:1,title:"拍照打卡",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					{id:2,title:"视频打卡",termStart:"2019-04-01",termEnd:"2019-05-30",},
+					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},
+					// {id:4,title:"全场立减50元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"50",criteria:"满1000使用"}
+				],
+				couponList:[
 					{id:1,title:"",termStart:"2019-04-01",termEnd:"2019-05-30",},
 					{id:2,title:"家用电器立减100元",termStart:"2019-04-01",termEnd:"2019-05-30",},
 					// {id:3,title:"全场立减10元",termStart:"2019-04-01",termEnd:"2019-05-30",ticket:"10",criteria:"无门槛"},

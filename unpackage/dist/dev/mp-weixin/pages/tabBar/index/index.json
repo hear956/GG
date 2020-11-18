@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "走马",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {}
+}

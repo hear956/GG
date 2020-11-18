@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/tabBar/index/index",
+    "pages/login/login",
+    "pages/category/category",
+    "pages/tabBar/my/my",
+    "pages/goods/goods-list/goods-list",
+    "pages/goods/goods",
+    "pages/login/register",
+    "pages/login/resetpasswd",
+    "pages/order/confirmation",
+    "pages/user/setting/setting",
+    "pages/msg/msg",
+    "pages/msg/chat/chat",
+    "pages/user/keep/keep",
+    "pages/user/address/address",
+    "pages/user/address/edit/edit",
+    "pages/pay/payment/payment",
+    "pages/pay/success/success",
+    "pages/goods/ratings/ratings",
+    "pages/launch/launch",
+    "pages/tabBar/home/home",
+    "common/search/search",
+    "pages/user/celler/celler",
+    "pages/user/Forthepayment/Forthepayment",
+    "pages/user/Toevaluate/Toevaluate",
+    "pages/user/Purchaserecords/Purchaserecords",
+    "pages/user/Browsethefootprint/Browsethefootprint",
+    "common/success/success",
+    "pages/goods/ratings/goods1/goods1",
+    "pages/user/celler/success/success",
+    "pages/launch/success/success"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#A1A1A1",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/index/index",
+        "iconPath": "static/img/icon/home.png",
+        "selectedIconPath": "static/img/icon/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/home/home",
+        "iconPath": "static/img/icon/writing gg.png",
+        "selectedIconPath": "static/img/icon/writing gg.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "iconPath": "static/img/icon/user center.png",
+        "selectedIconPath": "static/img/icon/user center.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "test"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
