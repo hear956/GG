@@ -313,6 +313,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/start/success/success",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
