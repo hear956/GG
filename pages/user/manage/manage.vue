@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- <view class="tabr" :style="{top:headerTop}">
-			<view class="zhongjian">商品</view>
+			<view class="zhongjian">已上架商品</view>
 			<view :class="{on:typeClass=='goods'}" @tap="switchType('goods')">商品({{goodsList.length}})</view>
 			<view :class="{on:typeClass=='shop'}"  @tap="switchType('shop')">店铺({{shopList.length}})</view>
 			<view class="border" :class="typeClass"></view>

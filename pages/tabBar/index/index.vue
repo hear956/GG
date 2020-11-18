@@ -1,6 +1,5 @@
 <template>
 	<view>
-
 		
 		<!-- 状态栏 -->
 		<view v-if="showHeader" class="status" :style="{ position: headerPosition,top:statusTop,opacity: afterHeaderOpacity}"></view>
@@ -325,8 +324,7 @@
 			},
 			//商品跳转
 			toGoods(e) {
-				console.log(address)
-				this.city = address.replace("市", "")
+				
 				uni.showToast({
 					title: '商品' + e.goods_id,
 					icon: 'none'

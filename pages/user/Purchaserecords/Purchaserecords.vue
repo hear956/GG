@@ -1,12 +1,12 @@
 <template>
 	<view>
-		<view class="tabr" :style="{top:headerTop}">
+		<!-- <view class="tabr" :style="{top:headerTop}">
 			<view class="zhongjian">商品</view>
-			<!-- <view :class="{on:typeClass=='goods'}" @tap="switchType('goods')">商品({{goodsList.length}})</view> -->
-			<!-- <view :class="{on:typeClass=='shop'}"  @tap="switchType('shop')">店铺({{shopList.length}})</view> -->
-			<!-- <view class="border" :class="typeClass"></view> -->
+			<view :class="{on:typeClass=='goods'}" @tap="switchType('goods')">商品({{goodsList.length}})</view>
+			<view :class="{on:typeClass=='shop'}"  @tap="switchType('shop')">店铺({{shopList.length}})</view>
+			<view class="border" :class="typeClass"></view>
 		</view>
-		<view class="place" ></view>
+		<view class="place" ></view> -->
 		<view class="list">
 			<!-- 优惠券列表 -->
 			<view class="sub-list goods" :class="subState">
