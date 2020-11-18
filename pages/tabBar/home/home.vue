@@ -10,7 +10,7 @@
 		<view class="place" ></view>
 		<view class="list">
 			<!-- 优惠券列表 -->
-			<view class="sub-list valid" :class="subState" >
+			<view class="sub-list valid" :class="subState"  v-if="subState == '' ">
 				<view class="tis" v-if="couponValidList.length==0">没有数据~</view>
 				<view class="row" v-for="(row,index) in couponValidList" :key="index" >
 					<!-- 删除按钮 -->
@@ -88,45 +88,25 @@
 					</view>
 				</view>
 			</view>
-			<view class="sub-list invalid" :class="subState" >
-					<view class="tis" v-if="couponList.length==0">没有数据~</view>
-					<view class="row" v-for="(row,index) in couponList" :key="index" >
-						<!-- 删除按钮 -->
-						<view class="menu" @tap.stop="deleteCoupon(row.id,couponList)">
-							<view class="icon shanchu"></view>
-						</view>
-						<!-- content -->
-						<view class="carrier" :class="[typeClass=='invalid'?theIndex==index?'open':oldIndex==index?'close':'':'']" @touchstart="touchStart(index,$event)" @touchmove="touchMove(index,$event)" @touchend="touchEnd(index,$event)">
-							<view class="left">
-								<view class="title">
-									{{row.title}}
-								</view>
-								<view class="term">
-									{{row.termStart}} ~ {{row.termEnd}}
-								</view>
+			<view class="sub-list invali" :class="subState" v-if="subState == 'showinvali'">
+					<view class="add">
+						
+						<view class="addImg">
+							<view v-for="(url,index) in urls" >
+								<image  :src="url" ></image>
+							</view>
+							<view>
+								<image id="imageChoose" src="../../../static/img/icon/add.png"  @tap="choose"></image>
+							</view>
 								
-								<view class="gap-top"></view>
-								<view class="gap-bottom"></view>
-							</view>
-							<view class="right invalid">
-								<view class="ticket">
-									<view class="num">
-										{{row.ticket}}
-									</view>
-									<!-- <view class="unit">
-										元
-									</view> -->
-								</view>
-								<view class="criteria">
-									{{row.criteria}}
-								</view>
-								<!-- <view class="use">
-									去查看
-								</view> -->
-							</view>
 						</view>
+						<!-- <view class="input switch">
+							<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
+						</view> -->
+						
+					
 					</view>
-				</view>
+				
 			</view>
 		</view>
 		
@@ -140,7 +120,7 @@
 		data() {
 			return {
 		
-			
+				urls: [],
 				couponValidList:[
 					{id:1,title:"小七孔门票+特产套餐",termStart:"2020-11-18",termEnd:"2020-11-20",},
 					{id:2,title:"黄果树瀑布一日游",termStart:"2019-04-01",termEnd:"2019-05-30",},
@@ -192,7 +172,16 @@
 			// #endif
 		},
 		methods: {
-
+			choose() {
+				var that =this
+				wx.chooseImage({
+					success: function(res) {
+						that.urls.push(res.tempFilePaths[0]) 
+						console.log(this.urls)
+						// document.getElementById("imageChoose").
+					},
+				});
+			},
 			switchType(type){
 				if(this.typeClass==type){
 					return ;
@@ -293,6 +282,22 @@
 		width: 100%;
 		height: 95upx;
 	}
+	.add{
+		
+	}
+	.addImg {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		image{
+			width: 200rpx;
+			height: 200rpx;
+			margin: 10rpx;
+		}
+	}
 	.tab{
 		width: 100%;
 	}
@@ -341,7 +346,7 @@
 		0% {transform: translateX(0);}100% {transform: translateX(-100%);}
 	}
 	@keyframes showInvali {
-		0% {transform: translateX(-100%);}100% {transform: translateX(0);}
+		0% {transform: translateX(-100%);} 100% {transform: translateX(0);}
 	}
 	.sub-list{
 		&.invalid{
@@ -350,9 +355,10 @@
 			left:100%;
 			display: none;
 		}
+	
 		&.showvalid{
 			display: flex;
-			animation: showValid 0.20s linear both;
+			animation: showVali 0.20s linear both;
 		}
 		&.showinvalid{
 			display: flex;
@@ -360,7 +366,8 @@
 		}
 		&.showinvali{
 			display: flex;
-			animation: showInvali 0.20s linear both;
+			
+			animation: showVali 0.20s linear both;
 		}
 		width: 100%;
 		padding: 20upx 0 120upx 0;
@@ -454,10 +461,9 @@
 					color: #fff;
 
 					&.invalid{
+						
 						background:linear-gradient(to right,#aaa,#999);
-						.use{
-							color: #aaa;
-						}
+						background: #595bb3;
 					}
 					justify-content: center;
 					.ticket,.criteria{width: 100%;}
@@ -473,6 +479,7 @@
 						font-size: 28upx;
 					}
 					.use{
+						margin-bottom: 35rpx;
 						width: 50%;
 						height: 40upx;
 						justify-content: center;
