@@ -118,7 +118,8 @@
 			toCategory(e){
 				uni.setStorageSync('catName',e.name);
 				uni.navigateTo({
-					url: '../../goods/goods-list/goods-list?cid='+e.id+'&name='+e.name
+					// url: '../../goods/goods-list/goods-list?cid='+e.id+'&name='+e.name
+					url:'/pages/goods/goods-list/goods-list'
 				});
 			},
 			//搜索跳转

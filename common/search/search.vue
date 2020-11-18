@@ -186,6 +186,9 @@
 					icon: 'none',
 					duration: 2000
 				});
+				uni.navigateTo({
+					url: '/pages/goods/goods-list/goods-list'
+				})
 				//以下是示例跳转淘宝搜索，可自己实现搜索逻辑
 				/*
 				//#ifdef APP-PLUS

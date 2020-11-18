@@ -37,6 +37,7 @@
 								<view class="unit">
 									元
 								</view> -->
+								<image src="../../../static/img/icon/ma.jpg"></image>
 							</view>
 							<view class="criteria">
 								{{row.criteria}}
@@ -455,7 +456,7 @@
 					flex-shrink: 0;
 					width: 28%;
 					color: #fff;
-					background:linear-gradient(to right,#ec625c,#ee827f);
+
 					&.invalid{
 						background:linear-gradient(to right,#aaa,#999);
 						.use{
@@ -465,16 +466,9 @@
 					justify-content: center;
 					.ticket,.criteria{width: 100%;}
 					.ticket{
-						padding-top: 1vw;
-						justify-content: center;
-						align-items: baseline;
-						height: 6vw;
-						.num{
-							font-size: 42upx;
-							font-weight: 600;
-						}
-						.unit{
-							font-size: 24upx;
+						image{
+							width: 200rpx; 
+							height: 180rpx; 
 						}
 					}
 					.criteria{
