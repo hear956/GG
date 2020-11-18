@@ -304,7 +304,16 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/start/start",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",

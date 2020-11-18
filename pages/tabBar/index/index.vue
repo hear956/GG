@@ -56,10 +56,10 @@
 					</navigator>
 				</view>
 				<view class="column" style="background-color: #FFFFFF;height: 240rpx;display: block; text-align: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);">
-					<navigator open-type="navigate" url="/pages/launch/launch" hover-class="none">
+					<navigator open-type="navigate" url="/pages/start/start" hover-class="none">
 						<image src="../../../static/img/icon/faqi.png" style="width: 120rpx; height: 120rpx;"></image>
 						<view class="wenyue-font">发起团购</view>
-						<view style="font-size: 10rpx; color: #999999;">完成商家认证</view>
+						<view style="font-size: 28rpx; color: #999999;">优惠由你定义</view>
 					</navigator>
 				</view>
 			</view>
