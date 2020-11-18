@@ -42,37 +42,8 @@
 				</view>
 
 			</view>
-			<view class="row">
-				<view class="nominal">
-					商家地址
-				</view>
-				<view class="input">
-					<textarea v-model="detailed" auto-height="true" placeholder="输入店铺详细地址"></textarea>
-				</view>
-			</view>
-			<view class="row">
-				<view class="nominal">
-					添加图片
-				</view>
-				
-			</view>
-			<view class="row">
-				
-				<view class="addImg">
-					<view v-for="(url,index) in urls" >
-						<image  :src="url" ></image>
-					</view>
-					<view>
-						<image id="imageChoose" src="../../static/img/icon/add.png"  @tap="choose"></image>
-					</view>
-						
-				</view>
-				<!-- <view class="input switch">
-					<switch color="#f06c7a" :checked="isDefault" @change=isDefaultChange />
-				</view> -->
-				
-			
-			</view>
+		
+		
 		</view>
 		<view class="save" @tap="save">
 			<view class="btn">
