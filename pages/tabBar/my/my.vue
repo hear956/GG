@@ -72,7 +72,11 @@
 					{url:'../../user/Browsethefootprint/Browsethefootprint',text:'浏览足迹',img:'/static/img/icon/clock.png'}, 
 					{url:'../../user/celler/celler',text:'商家认证',img:'/static/img/icon/bussiness-man.png'},
 					{url:'../../launch/launch',text:'商品发布',img:'/static/img/icon/rising.png'},
+<<<<<<< HEAD
 					// {url:'../../launch/launch',text:'商品管理',img:'/static/img/icon/tool.png'},
+=======
+					{url:'../../user/manage/manage',text:'商品管理',img:'/static/img/icon/tool.png'},
+>>>>>>> 9a4259a2b3a4e734a3683d63df1228f250399960
 					
 				
 					

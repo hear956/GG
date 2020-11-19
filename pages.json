@@ -119,7 +119,12 @@
 				"navigationBarBackgroundColor": "#f8f8f8",
 				"navigationBarTitleText": "我的设置",
 				"backgroundColorTop": "#ffffff",
-				"backgroundColorBottom": "#f3f3f3"
+				"backgroundColorBottom": "#f3f3f3",
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
 			}
 		}, {
 			"path": "pages/msg/msg",
@@ -156,7 +161,12 @@
 				"navigationBarBackgroundColor": "#ffffff",
 				"navigationBarTitleText": "地址管理",
 				"backgroundColorTop": "#ffffff",
-				"backgroundColorBottom": "#ffffff"
+				"backgroundColorBottom": "#ffffff",
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
 			}
 		}, {
 			"path": "pages/user/address/edit/edit",
@@ -194,8 +204,13 @@
 		}, {
 			"path": "pages/launch/launch",
 			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "商品发布",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
 			}
 
 		}
@@ -213,11 +228,13 @@
 		}, {
 			"path": "common/search/search",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "搜索",
 				"enablePullDownRefresh": false,
-				"app-plus": {
-					"bounce": "none"
-				}
+			"navigationBarBackgroundColor": "#595BB3",
+			"navigationBarTextStyle": "white",
+			"app-plus": {
+				"bounce": "none"
+			}
 
 			}
 
@@ -309,7 +326,35 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/start/success/success",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/manage/manage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "已上架商品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#595BB3",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
             }
             
         }

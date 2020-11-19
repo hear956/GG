@@ -154,7 +154,7 @@ view{
 			width: 70%;
 			height: 80upx;
 			border-radius: 80upx;
-			background-color: #f06c7a;
+			background-color: #595BB3;
 			color: #fff;
 			justify-content: center;
 			align-items: center;
