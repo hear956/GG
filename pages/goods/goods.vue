@@ -134,7 +134,7 @@
 		</view>
 		<!-- 标题 价格 -->
 		<view class="info-box goods-info">
-			<view class="price">￥{{goodsData.price}}</view>
+			<view class="price">{{goodsData.price}}</view>
 			<view class="title">
 				{{goodsData.name}}
 			</view>
@@ -217,7 +217,7 @@ export default {
 			goodsData:{
 				id:1,
 				name:"小七孔门票+xx酒店住宿1日",
-				price:"300.00",
+				price:"原价￥200，成团价￥168",
 				number:1,
 				service:[
 					{name:"官方认证",description:"此商品官方保证为正品"},

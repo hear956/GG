@@ -29,7 +29,8 @@
     "common/success/success",
     "pages/goods/ratings/goods1/goods1",
     "pages/user/celler/success/success",
-    "pages/launch/success/success"
+    "pages/launch/success/success",
+    "pages/start/start"
   ],
   "subPackages": [],
   "window": {
@@ -72,5 +73,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap15.json"
 }

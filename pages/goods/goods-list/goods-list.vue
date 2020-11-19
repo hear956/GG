@@ -15,7 +15,9 @@
 					<image mode="widthFix" :src="goods.img"></image>
 					<view class="name">{{goods.name}}</view>
 					<view class="info">
+						<view class="group">{{goods.group}}</view>
 						<view class="price">{{goods.price}}</view>
+						
 						<view class="slogan">{{goods.slogan}}</view>
 					</view>
 				</view>
@@ -30,13 +32,13 @@
 		data() {
 			return {
 				goodsList:[
-					{ goods_id: 0, img: 'http://localhost/photo/8.jpg', name: '好看的湖', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 1, img: 'http://localhost/photo/9.jpg', name: '夜幕降临', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 2, img: 'http://localhost/photo/10.jpg', name: '黄昏时的街道', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 3, img: 'http://localhost/photo/11.jpg', name: '上海外滩', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 4, img: 'http://localhost/photo/12.jpg', name: '城市夜景', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 5, img: 'http://localhost/photo/13.jpg', name: '城市立交桥', price: '￥168', slogan:'1235人付款' },
-					{ goods_id: 6, img: 'http://localhost/photo/14.jpg', name: '小七孔', price: '￥168', slogan:'1235人付款' }
+					{ goods_id: 0, img: 'http://localhost/photo/qikong.jpg', name: '小七孔门票+特产风味', group: '原价￥200', price:'成团价￥168', slogan:'差3人成团' },
+					{ goods_id: 1, img: 'http://localhost/photo/qikong.jpg', name: '中国天眼+特产', group: '原价￥360',price:'成团价￥320',slogan:'差4人成团' },
+					{ goods_id: 2, img: 'http://localhost/photo/qikong.jpg', name: '荔波联山湾+腾杨酒店1日套餐', group: '原价￥250', price:'成团价￥170',slogan:'差5人成团' },
+					{ goods_id: 3, img: 'http://localhost/photo/qikong.jpg', name: '樟江旅游区+xx酒店1日', group: '原价￥270', price:'成团价￥230',slogan:'差1人成团' },
+					{ goods_id: 4, img: 'http://localhost/photo/qikong.jpg', name: '瑶山古寨+风猪套餐', group: '原价￥300',price:'成团价￥270', slogan:'差1人成团' },
+					{ goods_id: 5, img: 'http://localhost/photo/qikong.jpg', name: '大七孔门票+云雾茶套餐', group: '原价￥268',price:'成团价￥232', slogan:'已成团' },
+					{ goods_id: 6, img: 'http://localhost/photo/qikong.jpg', name: '瑶山古寨+特产', group: '原价￥220',price:'成团价￥180', slogan:'差3人成团' }
 				],
 				loadingText:"正在加载...",
 				headerTop:"0px",
@@ -185,8 +187,9 @@
 
 	}
 .goods-list{
+	height: 60upx;
 		.loading-text{
-			width: 100%;
+			width: 90%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -194,12 +197,19 @@
 			color: #979797;
 			font-size: 24upx;
 		}
+		.group{
+			color: #061E26;
+			font-size: 20upx;
+			font-weight: 600;
+			
+		}
 		.product-list{
-			width: 92%;
+			width: 90%;
 			padding: 0 4% 3vw 4%; 
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			
 			.product{
 				width: 48%;
 				border-radius: 20upx;
@@ -208,10 +218,11 @@
 				box-shadow: 0upx 5upx 25upx rgba(0,0,0,0.1);
 				image{
 					width: 100%;
+					
 					border-radius: 20upx 20upx 0 0;
 				}
 				.name{
-					width: 92%;
+					width: 95%;
 					padding: 10upx 4%;
 					display: -webkit-box;
 					-webkit-box-orient: vertical;
@@ -229,7 +240,7 @@
 					
 					.price{
 						color: #e65339;
-						font-size: 30upx;
+						font-size: 20upx;
 						font-weight: 600;
 					}
 					.slogan{

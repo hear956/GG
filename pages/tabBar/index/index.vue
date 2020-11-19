@@ -72,11 +72,12 @@
 				<image src="/static/img/icon/huo.png"></image>
 			</view>
 			<view class="product-list">
-				<view class="product" v-for="product in productList1" :key="product.goods_id" @tap="toGoods(product)">
+				<view class="product" v-for="product in productList" :key="product.goods_id" @tap="toGoods(product)">
 					<image mode="widthFix" :src="product.img"></image>
 					<view class="name">{{ product.name }}</view>
 					<view class="info">
 						<view class="price">{{ product.price }}</view>
+						<view class="price1">{{ product.price1 }}</view>
 						<view class="slogan">{{ product.slogan }}</view>
 					</view>
 				</view>
@@ -162,43 +163,50 @@
 				productList: [{
 						goods_id: 0,
 						img: 'http://localhost/photo/xiaoqik.jpg',
-						name: '小七孔门票+xx酒店住宿1日',
-						price: '￥300',
+						name: '小七孔门票+xx餐饮住宿1日',
+						price: '原价￥380',
+						price1: '团购价￥300',
+						
 						slogan: '10人团'
 					},
 					{
 						goods_id: 1,
 						img: 'http://localhost/photo/qikong.jpg',
 						name: '小七孔门票+黔南特色风猪套餐',
-						price: '￥280',
+						price: '原价￥380',
+						price1: '团购价￥300',
 						slogan: '10人团'
 					},
 					{
 						goods_id: 2,
 						img: 'http://localhost/photo/skyeye.jpg',
 						name: '中国天眼+天文风情客栈1日',
-						price: '￥358',
+						price: '原价￥358',
+						price1: '团购价￥300',
 						slogan: '15人团'
 					},
 					{
 						goods_id: 3,
 						img: 'http://localhost/photo/guzhen.jpg',
 						name: '福泉古镇门票+民族服饰体验',
-						price: '￥246',
+						price: '原价￥246',
+						price1: '团购价￥300',
 						slogan: '20人团'
 					},
 					{
 						goods_id: 4,
 						img: 'http://localhost/photo/jiangjiehe.jpg',
 						name: '江界河风景名胜区+摆渡船来回',
-						price: '￥168',
+						price: '原价￥168',
+						price1: '团购价￥300',
 						slogan: '10人团'
 					},
 					{
 						goods_id: 5,
 						img: 'http://localhost/photo/jiangjiehe.jpg',
 						name: '江界河风景名胜区+烧烤套餐',
-						price: '￥268',
+						price: '原价￥268',
+						price1: '团购价￥300',
 						slogan: '10人团'
 					}
 					
@@ -739,11 +747,17 @@
 					padding: 10upx 4% 10upx 4%;
 
 					.price {
-						color: #e65339;
-						font-size: 30upx;
+						weight:auto;
+						color: #061E26;
+						font-size: 20upx;
 						font-weight: 600;
 					}
-
+                    .price1 {
+						weight:auto;
+						color: #e65339;
+						font-size: 20upx;
+						font-weight: 600;
+					}
 					.slogan {
 						color: #807c87;
 						font-size: 24upx;

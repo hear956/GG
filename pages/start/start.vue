@@ -3,7 +3,7 @@
 		<view class="content">
 			<view class="row">
 				<view class="nominal">
-					商品标题
+					商品信息
 				</view>
 				<view class="input">
 					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
@@ -16,14 +16,17 @@
 				<!-- <view class="input">
 					<input placeholder="个人拼团/任务拼团" type="text" v-model="name" />
 				</view> -->
-				<radio-group name="radio" class="radio">
-					<label class="label">
+				<view class="input">
+					<input placeholder="请为此次拼团设置主题" type="text" v-model="name1" />
+				</view>
+				<!-- <radio-group name="radio" class="radio"> -->
+					<!-- <label class="label">
 						<radio value="radio1" checked="checked"/><text>个人拼团</text>
-					</label>
-					<label class="label">
+					</label> -->
+					<!-- <label class="label">
 						<radio value="radio2" /><text>任务拼团</text>
-					</label>
-				</radio-group>
+					</label> -->
+				<!-- </radio-group> -->
 			</view>
 			<view class="row">
 				<view class="nominal">

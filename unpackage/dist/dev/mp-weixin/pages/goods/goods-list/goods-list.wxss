@@ -71,8 +71,11 @@
   background-color: #ffffff;
   height: 100rpx;
 }
+.goods-list {
+  height: 60rpx;
+}
 .goods-list .loading-text {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -86,8 +89,13 @@
   color: #979797;
   font-size: 24rpx;
 }
+.goods-list .group {
+  color: #061E26;
+  font-size: 20rpx;
+  font-weight: 600;
+}
 .goods-list .product-list {
-  width: 92%;
+  width: 90%;
   padding: 0 4% 3vw 4%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -113,7 +121,7 @@
           border-radius: 20rpx 20rpx 0 0;
 }
 .goods-list .product-list .product .name {
-  width: 92%;
+  width: 95%;
   padding: 10rpx 4%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -137,7 +145,7 @@
 }
 .goods-list .product-list .product .info .price {
   color: #e65339;
-  font-size: 30rpx;
+  font-size: 20rpx;
   font-weight: 600;
 }
 .goods-list .product-list .product .info .slogan {
